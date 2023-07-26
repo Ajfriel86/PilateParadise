@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-    height: 90vh;
+    height: 100vh;
     background-color: white;
     background-blend-mode: multiply;
     background-size: cover;
@@ -215,7 +215,7 @@ img {
 }
 
 .row-container {
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
