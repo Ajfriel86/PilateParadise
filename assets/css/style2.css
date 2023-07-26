@@ -1,60 +1,32 @@
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
-
+/* Create varible for a background colour */
 :root {
-    --background: rgba(80, 160, 96, .85);
+    --background: rgba(80, 160, 96, 1);
 }
 
+/*  */
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
 
+/* Style the body */
 body {
     margin: 0;
     font-family: 'Istok Web', sans-serif;
     font-weight: 400;
 }
 
-.container {
-    height: 100vh;
-    background-color: white;
-    background-blend-mode: multiply;
-    background-size: cover;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-
-.container h2 {
-    flex: 1 1 100%;
-    text-align: center;
-    justify-content: center;
+/* Style the logo within the header */
+.logo {
+    float: left;
     color: #000;
+    margin-left: 30px;
+    text-decoration: none;
+
 }
 
-.part-one {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-/* navigation styles start here */
-
-header {
-    background: var(--background);
-    text-align: center;
-    position: fixed;
-    z-index: 999;
-    width: 100%;
-}
-
-/* changed this from the tutorial video to
-   allow it to gain focus, making it tabbable */
+/* Style for nav bar */
 .nav-toggle {
     position: absolute !important;
     top: -9999px !important;
@@ -145,14 +117,49 @@ nav a:hover {
     transition: opacity 250ms ease-in-out 250ms;
 }
 
-.logo {
-    float: left;
-    color: #000;
-    margin-left: 30px;
-    text-decoration: none;
-
+/* Style for header */
+header {
+    background: var(--background);
+    text-align: center;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+/* Style for main container */
+.container {
+    height: 100vh;
+    background-color: white;
+    background-blend-mode: multiply;
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Style the h2 in the contanier */
+.container h2 {
+
+    flex: 1 1 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
+
+.part-one {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Syle the cards within the container */
 .item {
     background: black;
     color: white;
@@ -169,7 +176,8 @@ nav a:hover {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
-.item-col {
+/* Style the cards on the teacher page */
+.item-teach {
     background: black;
     color: white;
     margin: 0.5em;
@@ -182,6 +190,7 @@ nav a:hover {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
+/* Style the text section within the cards */
 .text-section {
     display: flex;
     flex-direction: column;
@@ -189,19 +198,23 @@ nav a:hover {
     align-items: center;
 }
 
+/* Style the images */
 img {
     width: 100%;
 }
 
+/* Style the image sections within the cards */
 .image-section {
     width: 100%;
 }
 
+/* Stle the 'contact us' button within the cards on the index page */
 .section-contact {
     text-decoration: none;
     color: white;
 }
 
+/* Style the h3 in the cards */
 .item h3 {
     display: flex;
     justify-content: center;
@@ -209,11 +222,13 @@ img {
     color: white;
 }
 
-.item p {
+/* Style the paragraphs within the cards */
+p {
     padding: 2em;
     color: white;
 }
 
+/* Style the row container on the classes page */
 .row-container {
     height: 100vh;
     display: flex;
@@ -223,6 +238,7 @@ img {
 
 }
 
+/* Style the h2 on classes page */
 .row-container h2 {
     flex: 1 1 100%;
     text-align: center;
@@ -230,6 +246,7 @@ img {
     color: #000;
 }
 
+/* Style the rows & cols on classes page */
 .row-container>.row-item {
     flex: 1 1 30%;
     /*grow | shrink | basis */
@@ -241,33 +258,34 @@ img {
     min-height: 25rem;
 }
 
+/* Style the rows on classes page */
 .row-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-
 }
 
-
+/* Style the footer */
 footer {
-    background: #000;
-    color: white;
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 2em;
-    padding-right: 2em;
+    background: #000;
+    color: white;
+    width: 100%;
+
 }
 
+/* Style the lists */
 li {
     list-style-type: none;
     line-height: 2;
     color: white;
 }
 
+/* Media query for responsive design */
 @media screen and (min-width: 800px) {
     .nav-toggle-label {
         display: none;
