@@ -37,67 +37,64 @@
     </header>
 
     <!--Main information for home page-->
-    <main class="container">
+    <main class="row-container">
         <h2>Contact or Booking</h2>
-        <section class="col">
-            <div class="-">
-
-                <form action="mailto:angus.friel.1986@gmail.com" method="post">
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname" aria-required="true" placeholder="Your name..">
-
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lastname" aria-required="true" placeholder="Your last name..">
-
-                    <label for="pnum">Phone Number</label>
-                    <input type="number" id="pnum" name="phonenumber" placeholder="Your phone number..">
-
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" aria-required="true" placeholder="Your email..">
-
-                    <label for="pnum">Address</label>
-                    <input type="text" id="address" name="address" aria-required="true" placeholder="Your address..">
-
-                    <label for="country">County</label>
-                    <select id="country" name="country" aria-required="true">
-                        <option value="carlow">Carlow</option>
-                        <option value="cavan">Cavan</option>
-                        <option value="care">Clare</option>
-                        <option value="cork">Cork</option>
-                        <option value="donegal">Donegal</option>
-                        <option value="dublin">Dublin</option>
-                        <option value="galway">Galway</option>
-                        <option value="kerry">Kerry</option>
-                        <option value="kildare">Kildare</option>
-                        <option value="kilkenny">Kilkenny</option>
-                        <option value="laois">Laois</option>
-                        <option value="leitrim">Leitrim</option>
-                        <option value="limerick">Limerick</option>
-                        <option value="longford">Longford</option>
-                        <option value="louth">Louth</option>
-                        <option value="mayo">Mayo</option>
-                        <option value="meath">Meath</option>
-                        <option value="monaghan">Monaghan</option>
-                        <option value="offaly">Offaly</option>
-                        <option value="rosscommon">Rosscommon</option>
-                        <option value="sligo">Sligo</option>
-                        <option value="tipperary">Tipperary</option>
-                        <option value="waterford">Waterford</option>
-                        <option value="westmeath">Westmeath</option>
-                        <option value="wexford">Wexford</option>
-                        <option value="wicklow">Wicklow</option>
-
-                        <textarea id="subject" name="subject" rows="10" cols="50" aria-required="true"
-                            placeholder="Write here.."></textarea>
 
 
 
+        <form action="mailto:angus.friel.1986@gmail.com" method="post">
+            <section class="row-item">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" aria-required="true" placeholder="Your name..">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" aria-required="true" placeholder="Your last name..">
+            </section>
 
+            <section class="row-item">
+                <label for="pnum">Phone Number</label>
+                <input type="number" id="pnum" name="phonenumber" placeholder="Your phone number..">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" aria-required="true" placeholder="Your email..">
+            </section>
 
-                    </select>
-
-                    <input type="submit" value="Submit">
-                </form>
+            <section class="row-item">
+                <label for="pnum">Address</label>
+                <input type="text" id="address" name="address" aria-required="true" placeholder="Your address..">
+            </section>
+            <section class="row-item">
+                <label for="country">County</label>
+                <select id="country" name="country" aria-required="true">
+                    <option value="carlow">Carlow</option>
+                    <option value="cavan">Cavan</option>
+                    <option value="care">Clare</option>
+                    <option value="cork">Cork</option>
+                    <option value="donegal">Donegal</option>
+                    <option value="dublin">Dublin</option>
+                    <option value="galway">Galway</option>
+                    <option value="kerry">Kerry</option>
+                    <option value="kildare">Kildare</option>
+                    <option value="kilkenny">Kilkenny</option>
+                    <option value="laois">Laois</option>
+                    <option value="leitrim">Leitrim</option>
+                    <option value="limerick">Limerick</option>
+                    <option value="longford">Longford</option>
+                    <option value="louth">Louth</option>
+                    <option value="mayo">Mayo</option>
+                    <option value="meath">Meath</option>
+                    <option value="monaghan">Monaghan</option>
+                    <option value="offaly">Offaly</option>
+                    <option value="rosscommon">Rosscommon</option>
+                    <option value="sligo">Sligo</option>
+                    <option value="tipperary">Tipperary</option>
+                    <option value="waterford">Waterford</option>
+                    <option value="westmeath">Westmeath</option>
+                    <option value="wexford">Wexford</option>
+                    <option value="wicklow">Wicklow</option>
+                    <textarea id="subject" name="subject" rows="10" cols="50" aria-required="true"
+                        placeholder="Write here.."></textarea>
+                </select>
+                <input type="submit" value="Submit">
+        </form>
         </section>
     </main>
     <!-- Footer -->
