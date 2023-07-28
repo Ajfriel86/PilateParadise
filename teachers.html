@@ -12,9 +12,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Style sheet CSS-->
     <link rel="stylesheet" href="assets/css/style2.css">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/6d30fc82e7.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <!-- Header with logo & nav bar, nav bar will then convert to a hamburger menu on mobile or tablet -->
     <header class="header">
         <h1>
             <a href="index.html" class="logo">Pilates Paradise</a>
@@ -36,10 +39,11 @@
         </label>
     </header>
 
-    <!--Main information for home page-->
-    <!--Main information for classes page-->
+    <!--Content for teachers page-->
     <main class="row-container">
+        <!-- Heading for this page -->
         <h2>Teachers</h2>
+        <!-- Section 1 for content -->
         <section class="row-item">
             <div class="text-section">
                 <h3>Paula Murphy</h3>
@@ -62,14 +66,18 @@
                     is an established exercise for men and women across Galway, and it always brings me joy seeing
                     others get the same benefits I experienced when I was younger and continue to enjoy now.</p>
             </div>
+            <!-- image for this section -->
             <figure class="image-section">
                 <img src="assets/images/group.jpg" alt="pilates instructor for group classes">
             </figure>
         </section>
+        <!-- Section 2 for content -->
         <section class="row-item">
+            <!-- image for this section  -->
             <figure class="image-section">
                 <img src="assets/images/private.jpg" alt="pilates instructor for private classes">
             </figure>
+            <!-- content for this section -->
             <div class="text-section">
                 <h3>Paula Murphy</h3>
                 <p>Back in the 1990s, I worked at a gym based in Chelsea, London as a body pump PT, ahead of
@@ -96,20 +104,35 @@
     </main>
     <!-- Footer -->
     <footer>
+        <!-- Left side of footer for contacting -->
         <div class="footer-left">
             <p>Contact</p>
             <ul>
-                <li>Email</li>
-                <li>085-12345678</li>
-                <li>Weside Shopping Centre, Galway</li>
+                <li>
+                    <i class="fa fa-regular fa-envelope" style="color: #ffffff;">
+                    </i><a href="mailto: angus.friel.1986@gmail.com" target="_top"> Email</a></li>
+
+                <li><a href="tel:085-12345678">
+                        <i class="fa fa-solid fa-phone" style="color: #ffffff;"></i>
+                        085-12345678</a></li>
+                <li>
+                <li><a href="contact.html"
+                        aria-label="Go to the contact to make a booking or to contact us about a query">
+                        <i class="fa fa-solid fa-location-pin" style="color: #ffffff;"></i> Weside Shopping
+                        Centre, Galway</a></li>
             </ul>
         </div>
+        <!-- Right side of foot for social links -->
         <div class="footer-right">
             <p>Social</p>
             <ul>
-                <li>Facebook</li>
-                <li>Instagram</li>
-                <li>Youtube</li>
+                <li><a href="https://www.facebook.com/" target="_blank">
+                        <i class="fa fa-brands fa-facebook-f" style="color: #ffffff;"></i> Facebook</a></li>
+                <li><a href="https://www.instagram.com/" target="_blank">
+                        <i class="fa fa-brands fa-instagram" style="color: #ffffff;"></i> Instagram</a></li>
+                <li><a href="https://www.youtube.com" target="_blank">
+                        <i class="fa fa-brands fa-youtube" style="color: #ffffff;"></i> Youtube
+                    </a></li>
             </ul>
         </div>
     </footer>
