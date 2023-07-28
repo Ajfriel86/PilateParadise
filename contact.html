@@ -12,9 +12,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Style sheet CSS-->
     <link rel="stylesheet" href="assets/css/style2.css">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/6d30fc82e7.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <!-- Header with logo & nav bar, nav bar will then convert to a hamburger menu on mobile or tablet -->
     <header class="header">
         <h1>
             <a href="index.html" class="logo">Pilates Paradise</a>
@@ -36,34 +39,36 @@
         </label>
     </header>
 
-    <!--Main information for home page-->
+    <!--Content for contact page-->
     <main class="form-container">
-        <h2>Contact or Booking</h2>
-
-
+        <!-- Heading for this page -->
+        <h2>Location & Contact</h2>
+        <!-- Section 1 for a Google map -->
+        <section class="form-item">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2385.7231200078863!2d-9.078278222380776!3d53.276580479940286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485b96595dabd441%3A0x63f61826a9d00884!2sWestside%20Shopping%20Centre%2C%20B%C3%B3thar%20Sh%C3%A9amais%20U%C3%AD%20Chuirc%2C%20Galway!5e0!3m2!1sen!2sie!4v1690518214885!5m2!1sen!2sie"
+                width="600" height="700" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <!-- Section 2 for the contact form -->
         <section class="form-item">
             <form action="mailto:angus.friel.1986@gmail.com" method="post">
                 <label for="fname">First Name</label>
                 <input type="text" id="fname" name="firstname" aria-required="true" minlength="3"
                     placeholder="Your name..">
-
                 <label for="lname">Last Name</label>
                 <input type="text" id="lname" name="lastname" aria-required="true" minlength="3"
                     placeholder="Your last name..">
-
                 <label for="pnum">Phone Number</label>
                 <input type="text" id="pnum" name="phonenumber" minlength="7" maxlength="14" pattern="[+]?[0-9]"
                     placeholder="Your phone number..">
-
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" aria-required="true"
                     title="The domain portion of the email address is invalid (the portion after the @)."
                     pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$"
                     placeholder="Your email..">
-
                 <label for="pnum">Address</label>
                 <input type="text" id="address" name="address" aria-required="true" placeholder="Your address..">
-
                 <label for="country">County</label>
                 <select id="country" name="country" aria-required="true">
                     <option value="carlow">Carlow</option>
@@ -92,7 +97,6 @@
                     <option value="westmeath">Westmeath</option>
                     <option value="wexford">Wexford</option>
                     <option value="wicklow">Wicklow</option>
-
                     <textarea id="subject" name="subject" rows="10" cols="50" aria-required="true"
                         placeholder="Write here.."></textarea>
                 </select>
@@ -103,20 +107,35 @@
     </main>
     <!-- Footer -->
     <footer>
+        <!-- Left side of footer for contacting -->
         <div class="footer-left">
             <p>Contact</p>
             <ul>
-                <li>Email</li>
-                <li>085-12345678</li>
-                <li>Weside Shopping Centre, Galway</li>
+                <li>
+                    <i class="fa fa-regular fa-envelope" style="color: #ffffff;">
+                    </i><a href="mailto: angus.friel.1986@gmail.com" target="_top"> Email</a></li>
+
+                <li><a href="tel:085-12345678">
+                        <i class="fa fa-solid fa-phone" style="color: #ffffff;"></i>
+                        085-12345678</a></li>
+                <li>
+                <li><a href="contact.html"
+                        aria-label="Go to the contact to make a booking or to contact us about a query">
+                        <i class="fa fa-solid fa-location-pin" style="color: #ffffff;"></i> Weside Shopping
+                        Centre, Galway</a></li>
             </ul>
         </div>
+        <!-- Right side of foot for social links -->
         <div class="footer-right">
             <p>Social</p>
             <ul>
-                <li>Facebook</li>
-                <li>Instagram</li>
-                <li>Youtube</li>
+                <li><a href="https://www.facebook.com/" target="_blank">
+                        <i class="fa fa-brands fa-facebook-f" style="color: #ffffff;"></i> Facebook</a></li>
+                <li><a href="https://www.instagram.com/" target="_blank">
+                        <i class="fa fa-brands fa-instagram" style="color: #ffffff;"></i> Instagram</a></li>
+                <li><a href="https://www.youtube.com" target="_blank">
+                        <i class="fa fa-brands fa-youtube" style="color: #ffffff;"></i> Youtube
+                    </a></li>
             </ul>
         </div>
     </footer>
