@@ -20,7 +20,8 @@ body {
     font-family: 'Maven Pro', Verdana, sans-serif;
     font-weight: 400;
     background-image: url('../images/110.jpg');
-    background-position: right;
+    background-position: center;
+    background-size: cover;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -207,11 +208,8 @@ h2 {
 /* Style the images */
 img {
     width: 100%;
-}
-
-/* Style the image sections within the cards */
-.image-section {
-    width: 100%;
+    display: block;
+    object-fit: cover;
 }
 
 /* Stle the 'contact us' button within the cards on the index page */
@@ -221,11 +219,21 @@ img {
 }
 
 /* Style the h3 in the cards */
-.item h3 {
+.item h3 a {
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.item a:hover {
+    color: white;
+    padding-bottom: 0.1rem;
+    border-bottom-style: solid;
+    border-bottom-width: 0.1rem;
+    width: fit-content;
 }
 
 /* Style the paragraphs within the cards */
@@ -287,13 +295,16 @@ footer li a {
     text-decoration: none;
 }
 
-#footer li a:visited {
+footer li a:visited {
     text-decoration: none
 }
 
-#footer li a:hover {
+footer li a:hover {
     color: white;
-    text-decoration: underline
+    padding-bottom: 0.1rem;
+    border-bottom-style: solid;
+    border-bottom-width: 0.1rem;
+    width: fit-content;
 }
 
 /* Style the lists */
@@ -301,6 +312,7 @@ li {
     list-style-type: none;
     line-height: 2;
     color: white;
+    cursor: pointer;
 }
 
 .form-container {
