@@ -330,7 +330,7 @@ li {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
-    align-items: center;
+    align-content: center;
     flex-wrap: wrap;
     margin-top: 10em !important;
     margin-bottom: 10em !important;
@@ -340,6 +340,23 @@ li {
 .form-item {
     box-shadow: var(--boxshadow);
     border-style: solid;
+}
+
+.form-map {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10em !important;
+    margin-bottom: 10em !important;
+}
+
+.form-map iframe {
+    box-shadow: var(--boxshadow);
+    border-style: solid;
+    position: absolute;
+    height: 700px;
+    width: 500px;
 }
 
 form {
