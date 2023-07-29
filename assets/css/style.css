@@ -372,6 +372,7 @@ input:focus {
 textarea {
     padding: 1rem;
     padding-top: 1rem;
+    resize: none;
 }
 
 /* Media query for responsive design on mobile/tablet */
