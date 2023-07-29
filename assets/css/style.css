@@ -344,15 +344,16 @@ form input {
     border: 1px solid #9c9c9c;
 }
 
-form button {
+.btn {
     background: lightgrey;
     padding: 0.7em;
     width: 100%;
     border: 0;
 }
 
-form button:hover {
+.btn:hover {
     background: #77ED8E;
+    cursor: pointer;
 }
 
 label {

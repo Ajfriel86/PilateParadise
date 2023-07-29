@@ -70,25 +70,29 @@
             </section>
             <!-- Section 2 for the contact form -->
             <section class="form-item">
-                <form action="mailto:angus.friel.1986@gmail.com" method="post">
+                <form action="thankyou.html" method="post" target="_blank">
+
                     <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname" aria-required="true" minlength="3"
-                        placeholder="Your name..">
+                    <input type="text" id="fname" name="firstname" required minlength="3" placeholder="Your name..">
+
                     <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lastname" aria-required="true" minlength="3"
-                        placeholder="Your last name..">
+                    <input type="text" id="lname" name="lastname" required minlength="3" placeholder="Your last name..">
+
                     <label for="pnum">Phone Number</label>
-                    <input type="text" id="pnum" name="phonenumber" minlength="7" maxlength="14" pattern="[+]?[0-9]"
-                        placeholder="Your phone number..">
+                    <input type="text" id="pnum" name="phonenumber" pattern="[0-9]" placeholder="Your phone number..">
+
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" aria-required="true"
+                    <input type="email" id="email" name="email" required
                         title="The domain portion of the email address is invalid (the portion after the @)."
                         pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$"
                         placeholder="Your email..">
-                    <label for="pnum">Address</label>
-                    <input type="text" id="address" name="address" aria-required="true" placeholder="Your address..">
+
+                    <label for="address">Address</label>
+
+                    <input type="text" id="address" name="address" placeholder="Your address..">
                     <label for="country">County</label>
-                    <select id="country" name="country" aria-required="true">
+
+                    <select id="country" name="country">
                         <option value="carlow">Carlow</option>
                         <option value="cavan">Cavan</option>
                         <option value="care">Clare</option>
@@ -115,11 +119,11 @@
                         <option value="westmeath">Westmeath</option>
                         <option value="wexford">Wexford</option>
                         <option value="wicklow">Wicklow</option>
-                        <textarea id="subject" name="subject" rows="10" cols="50" aria-required="true"
+                        <textarea id="subject" name="subject" rows="10" cols="50" required
                             placeholder="Write here.."></textarea>
                     </select>
                     </br>
-                    <button>Submit</button>
+                    <input type="submit" value="Submit" class="btn">
                 </form>
             </section>
         </main>
