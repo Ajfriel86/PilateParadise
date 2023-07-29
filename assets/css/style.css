@@ -1,8 +1,9 @@
+/* importing fonts from google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
 
 /* Create varible for a background colour & box-shadow */
 :root {
-    --background: rgba(80, 160, 96, 1);
+    --background: rgba(80, 160, 96, 0.9);
     --boxshadow: rgba(0, 0, 0, 1) 0px 22px 70px 4px;
 }
 
@@ -23,6 +24,18 @@ body {
     background-position: center;
     background-size: cover;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for header */
+header {
+    background: var(--background);
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
 }
@@ -127,20 +140,7 @@ nav a:hover {
     transition: opacity 250ms ease-in-out 250ms;
 }
 
-/* Style for header */
-header {
-    background: var(--background);
-    text-align: center;
-    position: fixed;
-    top: 0;
-    z-index: 999;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Style for main container */
+/* Style for main container on index.html */
 .container {
     background-blend-mode: multiply;
     background-size: cover;
@@ -152,22 +152,7 @@ header {
     flex-wrap: wrap;
 }
 
-/* Style the h2 in the contanier */
-h2 {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    color: #000;
-}
-
-.part-one {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Syle the cards within the container */
+/* Syle the cards within the container on index.html */
 .item {
     background: rgba(0, 0, 0, 0.9);
     color: white;
@@ -183,21 +168,20 @@ h2 {
     box-shadow: var(--boxshadow);
 }
 
-/* Style the cards on the teacher page */
-.item-teach {
-    background: black;
+/* Style all the paragraphs */
+p {
+    padding: 2em;
     color: white;
-    margin: 0.5em;
-    width: 100rem;
-    line-height: 2;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    box-shadow: var(--boxshadow);
 }
 
-/* Style the text section within the cards */
+/* Style on the images */
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* Style the text section within the cards on index.html */
 .text-section {
     display: flex;
     flex-direction: column;
@@ -205,20 +189,7 @@ h2 {
     align-items: center;
 }
 
-/* Style the images */
-img {
-    width: 100%;
-    display: block;
-    object-fit: cover;
-}
-
-/* Stle the 'contact us' button within the cards on the index page */
-.section-contact {
-    text-decoration: none;
-    color: white;
-}
-
-/* Style the h3 in the cards */
+/* Style the h3 in the cards on index.html */
 .item h3 a {
     display: flex;
     justify-content: center;
@@ -228,6 +199,7 @@ img {
     cursor: pointer;
 }
 
+/* Style the anchor tags on hover over on index.html */
 .item a:hover {
     color: white;
     padding-bottom: 0.1rem;
@@ -236,14 +208,22 @@ img {
     width: fit-content;
 }
 
-/* Style the paragraphs within the cards */
-p {
-    padding: 2em;
+/* Stle the 'contact us' button within the cards on  index.html */
+.section-contact {
+    text-decoration: none;
     color: white;
 }
 
-/* Style the row container on the classes page */
+.part-one {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the main container on classes.html */
 .row-container {
+    margin-top: 10em !important;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -251,32 +231,62 @@ p {
 
 }
 
-/* Style the h2 on classes page */
-.row-container h2 {
-    flex: 1 1 100%;
-    text-align: center;
-    justify-content: center;
-    color: #000;
-}
-
-/* Style the rows & cols on classes page */
+/* Style the rows & cols on classes.html */
 .row-container>.row-item {
     /*grow | shrink | basis */
     flex: 1 1 30%;
     background: rgba(0, 0, 0, 0.85);
     color: white;
     margin: 0.5em;
-    min-width: 30rem;
     min-height: 25rem;
+    min-width: 20rem;
 }
 
-/* Style the rows on classes page */
+/* Style the cols on on classes.html */
 .row-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     box-shadow: var(--boxshadow);
+    flex-wrap: wrap;
+}
+
+.teach-container {
+    background-blend-mode: multiply;
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10em !important;
+    flex-wrap: wrap;
+}
+
+/* Style the cards on the teacher page */
+.teach-item {
+    color: white;
+    margin: 0.5em;
+    width: 100rem;
+    line-height: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: var(--boxshadow);
+}
+
+/* Style the rows & cols on classes.html */
+.teach-container>.teach-item {
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    margin: 0.5em;
+    min-height: 25rem;
+}
+
+.image-section {
+    display: flex;
 }
 
 /* Style the footer */
@@ -287,6 +297,7 @@ footer {
     background: #000;
     color: white;
     width: 100%;
+    bottom: 0;
 
 }
 
@@ -321,7 +332,8 @@ li {
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-
+    margin-top: 10em !important;
+    margin-bottom: 10em !important;
 
 }
 
@@ -375,7 +387,7 @@ textarea {
     resize: none;
 }
 
-/* Media query for responsive design on mobile/tablet */
+/* Media query for responsive nav bar */
 @media screen and (min-width: 800px) {
     .nav-toggle-label {
         display: none;
