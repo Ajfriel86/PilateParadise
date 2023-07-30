@@ -31,48 +31,60 @@
 <!-- This defines the documents body which contains all the content viewed from this html document -->
 
 <body>
-    <!-- Header with logo & nav bar, nav bar will then convert to a hamburger menu on mobile or tablet -->
+    <!-- The Header is the introduction to the document and contains a heading & nav bar -->
     <header class="header">
+        <!-- Heading 1, or h1, is the top heading and also functions as a nav button to return to the home page -->
         <h1>
             <a href="index.html" class="logo" aria-label="go back to our home page">Pilates Paradise</a>
         </h1>
+        <!-- This checkbox is used to open/close the hamburger menu when it is activated but it also hidden with css -->
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <!-- This is the navigation section which is use to go to/view other pages within the HTML document -->
         <nav>
+            <!-- This is an unordered list, or ul, which hosts the nav links -->
             <ul>
+                <!-- This is the lists items, or li, which are in the ul -->
                 <li>
+                    <!-- This is an anchor tag, which acts as a link to the home page -->
                     <a href="index.html" aria-label="Go to the home page to learn about what we offer">
                         Home</a></li>
                 <li>
+                    <!-- This is an anchor tag, which acts as a link to the classes page -->
                     <a href="classes.html" aria-label="Go to the classes page for our weekly timetable">
                         Classes
                     </a>
                 </li>
                 <li>
+                    <!-- This is an anchor tag, which acts as a link to the teachers page -->
                     <a href="teachers.html" aria-label="Go to the teachers page to learn about our teachers">
                         Teachers
                     </a>
                 </li>
                 <li>
+                    <!-- This is an anchor tag, which acts as a link to the contact page -->
                     <a href="contact.html" aria-label="Go to the contact to make a booking">
                         Contact
                     </a>
                 </li>
             </ul>
         </nav>
+        <!-- This lable works in tandem with the above check box, the 'for' will look for the 'id' in the checkbox and then display the nav bar  -->
         <label for="nav-toggle" class="nav-toggle-label">
+            <!-- the span is used within the label to display the 3 lines of the hamburger menu -->
             <span></span>
         </label>
     </header>
 
     <!--Main information for home page-->
     <main class="container">
-
-        <!-- Heading for this page-->
-
+        <!-- Content for this pag -->
         <section class="item">
+            <!-- Image to displayed -->
             <figure class="image-section">
+                <!-- Displayed the thank you image -->
                 <img src="assets/images/ty.jpg" alt="two people holding a thank you sign">
                 <figcaption>
+                    <!-- No caption -->
                 </figcaption>
             </figure>
         </section>
@@ -81,24 +93,33 @@
     <footer>
         <!-- Left side of footer for contacting -->
         <div class="footer-left">
+            <!-- Contact information -->
             <p>Contact</p>
+            <!-- Unordered list, ul, of the contact information -->
             <ul>
+                <!-- List item, li, contacting the contact information -->
                 <li>
-                    <i class="fa fa-regular fa-envelope" style="color: #ffffff;"></i>
+                    <!-- Anchor, a, that sends opens an email with the companies email address in it -->
                     <a href="mailto: angus.friel.1986@gmail.com" target="_top" aria-label="Send us an email">
+                        <!-- Font awesome icon for the email contact informaiton -->
+                        <i class="fa fa-regular fa-envelope" style="color: #ffffff;"></i>
                         Email
                     </a>
                 </li>
                 <li>
+                    <!-- Anchor, a, for the phone number of the company -->
                     <a href="tel:085-12345678" aria-label="give us a call">
+                        <!-- Font awesome icon for a telephone -->
                         <i class="fa fa-solid fa-phone" style="color: #ffffff;"></i>
                         085-12345678
                     </a>
                 </li>
                 <li>
                 <li>
+                    <!-- Anchor, a, that links to the contact page with a map of the companies location -->
                     <a href="contact.html" aria-label="Go to the contact to make a booking">
-                        <i class="fa fa-solid fa-location-pin" style="color: #ffffff;"></i>
+                        <!-- Font awesome icon of a location pin -->
+                        <i class="fas fa-map-marker-alt" style="color: #ffffff;"></i>
                         Westside Shopping Centre, Galway
                     </a>
                 </li>
@@ -106,21 +127,29 @@
         </div>
         <!-- Right side of foot for social links -->
         <div class="footer-right">
+            <!-- Social media information -->
             <p>Social</p>
+            <!-- Unordered list, li, of the social media information -->
             <ul>
+                <!-- List items that conatin the social media information -->
                 <li>
+                    <!-- Anchor, a, that links to facebook -->
                     <a href="https://www.facebook.com/" target="_blank" aria-label="Go to out Facebook page">
+                        <!-- Font awesome icon of the facebook logo -->
                         <i class="fa fa-brands fa-facebook-f" style="color: #ffffff;"></i>
                         Facebook
                     </a>
                 </li>
                 <li>
+                    <!-- Anchor, a, that links to instagram -->
                     <a href="https://www.instagram.com/" target="_blank" aria-label="go to our instagram">
+                        <!-- Font awesome icon of the instagram logo -->
                         <i class="fa fa-brands fa-instagram" style="color: #ffffff;"></i>
                         Instagram
                     </a>
                 </li>
                 <li>
+                    <!-- Anchor, a, that links to youtube -->
                     <a href="https://www.youtube.com" target="_blank" aria-label="go to our youtube channel">
                         <i class="fa fa-brands fa-youtube" style="color: #ffffff;"></i>
                         Youtube
