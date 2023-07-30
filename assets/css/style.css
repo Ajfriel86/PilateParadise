@@ -7,7 +7,7 @@
     --boxshadow: rgba(0, 0, 0, 1) 0px 22px 70px 4px;
 }
 
-/*  */
+/* this is a universal indicator to add a border box on the hamburger menu when check on/off - before/after */
 *,
 *::before,
 *::after {
