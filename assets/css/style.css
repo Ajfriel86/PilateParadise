@@ -49,17 +49,19 @@ header {
 
 }
 
-/* Style for nav bar */
+/* Style for the checkbox used in nav bar to display the hamburger menu */
 .nav-toggle {
     position: absolute !important;
     top: -9999px !important;
     left: -9999px !important;
 }
 
+/*  */
 .nav-toggle:focus~.nav-toggle-label {
     outline: 3px solid rgba(lightblue, .75);
 }
 
+/* Styling/positioning the label used for the hamburger menu */
 .nav-toggle-label {
     position: absolute;
     top: 0;
@@ -70,6 +72,7 @@ header {
     align-items: center;
 }
 
+/* Styling used to dispaly 3 lines of the hamburger menu */
 .nav-toggle-label span,
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
@@ -81,20 +84,24 @@ header {
     position: relative;
 }
 
+/*  creates the 1st lines in the hamburger menu and positions them */
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
     content: '';
     position: absolute;
 }
 
+/*  creates the 2nd lines in the hamburger menu */
 .nav-toggle-label span::before {
     bottom: 7px;
 }
 
+/*  creates the 3rd lines in the hamburger menu */
 .nav-toggle-label span::after {
     top: 7px;
 }
 
+/* stlyes the nav bar for both hamburger menu and regular nav bar, the transforms are for the hamburger menu */
 nav {
     position: absolute;
     text-align: left;
@@ -107,17 +114,20 @@ nav {
     transition: transform 400ms ease-in-out;
 }
 
+/* Style of the unordered list of the nav bar */
 nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
+/* style for the list items in the nav bar */
 nav li {
     margin-bottom: 1em;
     margin-left: 1em;
 }
 
+/* style for the anchor tags in the nav bar and hamburger menu */
 nav a {
     color: white;
     text-decoration: none;
@@ -127,14 +137,17 @@ nav a {
     transition: opacity 150ms ease-in-out;
 }
 
+/* when the end user hovers the cursor over an achor tag in the nav bar the colour will change */
 nav a:hover {
     color: #000;
 }
 
+/* this is used to scale the hamburger menu when it is clicked */
 .nav-toggle:checked~nav {
     transform: scale(1, 1);
 }
 
+/* this targets the anchor tag in the nav when it is checked and helps with the transition when viewing the hamgurger menu */
 .nav-toggle:checked~nav a {
     opacity: 1;
     transition: opacity 250ms ease-in-out 250ms;
@@ -245,6 +258,7 @@ img {
     flex-wrap: wrap;
 }
 
+/* Styles the container on the teachers.html page */
 .teach-container {
     background-blend-mode: multiply;
     background-size: cover;
@@ -257,7 +271,7 @@ img {
     flex-wrap: wrap;
 }
 
-/* Style the cards on the teacher page */
+/* Style the cards on the teachers.html page */
 .teach-item {
     width: 100rem;
     line-height: 2;
@@ -268,7 +282,7 @@ img {
     box-shadow: var(--boxshadow);
 }
 
-/* Style the rows & cols on classes.html */
+/* Style the rows & cols on teachers.html */
 .teach-container>.teach-item {
     background: rgba(0, 0, 0, 0.85);
     color: white;
@@ -276,10 +290,12 @@ img {
     min-height: 25rem;
 }
 
+/* Styles the image sections of the containers so it is responive */
 .image-section {
     display: flex;
 }
 
+/* Style the container on the contact.html page */
 .form-container {
     display: flex;
     width: 100%;
@@ -291,11 +307,13 @@ img {
 
 }
 
+/* Styles the items within the container on the contact.html page */
 .form-item {
     box-shadow: var(--boxshadow);
     border-style: solid;
 }
 
+/* stlyes the google map on the contact.html page */
 .form-map {
     position: relative;
     display: flex;
@@ -305,6 +323,7 @@ img {
     margin-bottom: 10em !important;
 }
 
+/* styles the iframe on the contact.html page */
 .form-map iframe {
     box-shadow: var(--boxshadow);
     border-style: solid;
@@ -313,6 +332,7 @@ img {
     width: 500px;
 }
 
+/* Styles the form on the contact.html page */
 form {
     display: grid;
     padding: 1em;
@@ -322,11 +342,13 @@ form {
     padding: 1em;
 }
 
+/* stles the input sectiosn on the from on the contact.html page */
 form input {
     background: #fff;
     border: 1px solid #9c9c9c;
 }
 
+/* styles the sumbit button on the form on the contact.html page */
 .btn {
     background: lightgrey;
     padding: 0.7em;
@@ -334,31 +356,36 @@ form input {
     border: 0;
 }
 
+/* stlye the hover action of the submit button on the form on the contact.html page */
 .btn:hover {
     background: #77ED8E;
     cursor: pointer;
 }
 
+/* stlye all labels on the form on the contact.html page */
 label {
     padding: 0.5em 0.5em 0.5em 0;
 }
 
+/* stlye all inputs on the form on the contact.html page */
 input {
     padding: 0.7em;
     margin-bottom: 0.5rem;
 }
 
+/* stlye the input when it is clicked on, on the form on the contact.html page */
 input:focus {
     outline: 3px solid 77ED8E;
 }
 
+/* stlye the textarea on the form on the contact.html page */
 textarea {
     padding: 1rem;
     padding-top: 1rem;
     resize: none;
 }
 
-/* Style the footer */
+/* Style the footer on every page */
 footer {
     display: flex;
     justify-content: space-evenly;
@@ -370,15 +397,18 @@ footer {
 
 }
 
+/* style the anchor tag within a list item on the footer of every page */
 footer li a {
     color: white;
     text-decoration: none;
 }
 
+/* removes style for an achor tage in a list item on the footerr of every page */
 footer li a:visited {
     text-decoration: none
 }
 
+/* styles the hover action on an anchor tag of a list item on the footer of every page */
 footer li a:hover {
     color: white;
     padding-bottom: 0.1rem;
@@ -387,7 +417,7 @@ footer li a:hover {
     width: fit-content;
 }
 
-/* Style the lists */
+/* Style the list items */
 li {
     list-style-type: none;
     line-height: 2;
@@ -395,6 +425,7 @@ li {
     cursor: pointer;
 }
 
+/* Media query for the mobile/tablet */
 @media only screen and (max-width: 800px) {
     .teach-container {
         display: unset;
@@ -411,12 +442,14 @@ li {
 
 /* Media query for responsive nav bar */
 @media screen and (min-width: 800px) {
-    .nav-toggle-label {
-        display: none;
-    }
 
+    /* styles the container on the teachers.html page so it is responive */
     .teach-container {
         flex-direction: row;
+    }
+
+    .nav-toggle-label {
+        display: none;
     }
 
     header {
