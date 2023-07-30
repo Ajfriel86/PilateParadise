@@ -1,108 +1,160 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Pilates Paradise
 
-Welcome USER_NAME,
+## About
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
-
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
-
-## Gitpod Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+The goal of delivering this site is to fullfil an end-user's needs when searching for a Pilates studio in their area. The site comprises of information regarding various classes and when they are on, as well as teacher information who guide the classes.
 
 ---
 
-Happy coding!
+## User stories:
+1. As a site user, I would like the site in English
+
+1. As a site user, I would like to improve my well-being.
+
+1. As a site user, I would like I am open-minded and willing to try new things.
+
+1. As a site user, I am interested in the field of yoga and meditation.
+
+1. As a site user, I have disposable income which I can invest in myself and my wellbeing.
+
+1. As a site user, I would like the information to be clear so I have a better understanding of what the company does
+
+1. As a site user, I would like to know the class schedule so I know what is days/times certain things are on
+
+1. As a site user, I would like to be able to contact the company owner to enquire about classes
+
+1. As a site user, I would like to know where the company is so I know where to go for the classes
+
+1. As a site user, I would like to know about the company owner/teachers so I know their level of experience and expertise
+
+1. As a site user, I would like to know what services are available so I know what is on offer
+
+### Site-OWner:
+
+1. As a site owner, I would like the site to display all the necessary information for site users to understand what service we deliver 
+
+1. As a site owner, I would like the site to be designed tastefully and modern so it stands out from other sites
+
+1. As a site owner, I would like classes and times to be displayed for site users to know what we do and when it is on
+
+1. As a site owner, I would like a contact form for site users to book classes and/or contact me
+
+1. As a site owner, I would like users to feel comfortable using the site so they can navigate easily and have all their needs met
+---
+
+## Features
+
+1. Landing page
+
+   - Upon visiting the site the initial page will display 3 cards with various options of different classes that are available
+
+    ![landing page](./README_images/landing_page.png)
+
+1. Classes Page
+
+    - The following page has a timetable laid out for the various classes and when they are on
+
+    ![classes page](./README_images/classes_page.png)
+
+1. Teachers Page
+
+    - This page will display information regarding the teachers who guide the classes at the studio
+
+    	![teachers page](./README_images/teachers_page.png)
+
+1. Contact Page
+
+    - This page will display a map with the location of the studio as well as a contact form so end users can reach out to the studio about any queries or if they wish to book a class
+
+    ![contact page](./README_images/contact_page.png)
+
+1. Thank You Page
+
+    - This page is displayed after the form has been filled in and validated
+
+    ![thankyou page](./README_images/thankyou_page.png)
+---
+
+## Technologies used
+
+- ### Languages:
+
+    + [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML): The markup language used to create the website.
+    + [CSS](https://developer.mozilla.org/en-US/docs/Web/css): The styling language used to style the website.
+
+- ### Other tools:
+
+    + [GitHub](https://github.com/): This was used to host the source code of the website.
+    + [VSCode](https://code.visualstudio.com/): This was the IDE used to develop the website.
+    + [Chrome DevTools](https://developer.chrome.com/docs/devtools/open/): This was used to debug the website.
+    + [Font Awesome](https://fontawesome.com/): This was used to create the icons used in the website.
+    + [Google Fonts](https://fonts.google.com/): This was used to import the font 'Maven Pro' that is used throughout the site.
+    + [Abobe Color-Wheel](https://color.adobe.com/create/color-wheel): This was used to create color swatches.
+    + [W3C Validator](https://validator.w3.org/): This was used to validate HTML5 code for the website.
+    + [W3C CSS validator](https://jigsaw.w3.org/css-validator/): This is used to validate CSS code for the website.
+  
+
+---
+## Design
+
+The design for this site was inspired by my local [Pilates Studio](https://galwaypilates.com/) as well as some searching on color design. I used the [Abobe Color Wheel](https://color.adobe.com/create/color-wheel) and chose a base color to work off then went with monochromatic coloring.
+    
+![color swatch](./README_images/colour_swatch.png)
+
+## Testing
+
+---
+
+## Deployment
+
+This website was constructed in GitPod and deployed on GitHub. The steps taken to deploy this website from its [GitHub Repository](https://github.com/Ajfriel86/PilatesParadise) are as follows:
+
+- Log into GitHub
+- Go to the list of repositories on the left-hand side of the screen.
+- Click on the repository - Ajfriel86/pilatesparadise
+- Choose the settings tab from the menu items across the top of the page; it is the ninth choice and last option on the menu items.
+- Once the settings page has loaded scroll down to GitHub Pages.
+- In the source section, choose the master branch.
+- On selecting this the page is automatically refreshed and the website is deployed.
+- A link to the website is then displayed, this is the deployed website address.
+
+---
+
+## Credits
+
+The inspiration for this website comes from the [Galway Pilates Studio](https://galwaypilates.com/), as well as some of the contents displayed on this website where it was also sourced. 
+
+For a deeper understanding of hamburger menus with no JavaScript, meta tags, information tags and more knowledge regarding HTML and CSS documents I used the following recourses:
+
+  -  [W3 Schools - HTML Elemnts](https://www.w3schools.com/html/html_elements.asp)
+   - [W3 Schools - Doctype](https://www.w3schools.com/tags/tag_doctype.asp)
+   - [Geeks for Geeks - http-equivx-ua](https://www.geeksforgeeks.org/what-does-meta-http-equivx-ua-compatible-contentieedge-do/)
+   - [HubSpot - utf-8](https://blog.hubspot.com/website/what-is-utf-8)
+   - [Mozilla Viewport Meta Tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag)
+   - [W3 Schools - Meta Tags](https://w3schools.com/tags/tag_meta.asp) 
+   - [Ahrefs - Keywords](https://ahrefs.com/blog/meta-keywords/)
+   - [Kevin Powell - Create a Responsive Nav Bar with no JS](https://www.youtube.com/watch?v=8QKOaTYvYUA&t=26s)
+   - [Mozilla - Header](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header)
+   - [Mozilla - Nav tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav)
+   - [Mozzila - HTML Markup](https://www.w3.org/TR/2012/WD-html-markup-20120329/ul.html)
+   - [W3 Schools - Anchor Tags](https://www.w3schools.com/tags/tag_a.asp)
+
+
+---
+## Wireframes
+
+### Home page:
+
+![wireframe landing page](./README_images/wire_frame_landing_page.png)
+
+### Classes page:
+
+![wireframe classes page](./README_images/wireframe_classes_page.png)
+
+### Teachers page:
+
+![wireframe teachers page](./README_images/wireframe_teachers_page.png)
+
+### Contact page:
+
+![wireframe contact page](./README_images/wireframe_contact_page.png)
