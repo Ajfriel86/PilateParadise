@@ -31,63 +31,88 @@
 <!-- This defines the documents body which contains all the content viewed from this html document -->
 
 <body>
-    <!-- Header with logo & nav bar, nav bar will then convert to a hamburger menu on mobile or tablet -->
+    <!-- The Header is the introduction to the document and contains a heading & nav bar -->
     <header class="header">
+        <!-- Heading 1, or h1, is the top heading and also functions as a nav button to return to the home page -->
         <h1>
             <a href="index.html" class="logo" aria-label="go back to our home page">Pilates Paradise</a>
         </h1>
+        <!-- This checkbox is used to open/close the hamburger menu when it is activated but it also hidden with css -->
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <!-- This is the navigation section which is use to go to/view other pages within the HTML document -->
         <nav>
+            <!-- This is an unordered list, or ul, which hosts the nav links -->
             <ul>
+                <!-- This is the lists items, or li, which are in the ul -->
                 <li>
+                    <!-- This is an anchor tag, which acts as a link to the home page -->
                     <a href="index.html" aria-label="Go to the home page to learn about what we offer">
                         Home</a></li>
                 <li>
+                    <!-- This is an anchor tag, which acts as a link to the classes page -->
                     <a href="classes.html" aria-label="Go to the classes page for our weekly timetable">
                         Classes
                     </a>
                 </li>
                 <li>
+                    <!-- This is an anchor tag, which acts as a link to the teachers page -->
                     <a href="teachers.html" aria-label="Go to the teachers page to learn about our teachers">
                         Teachers
                     </a>
                 </li>
                 <li>
+                    <!-- This is an anchor tag, which acts as a link to the contact page -->
                     <a href="contact.html" aria-label="Go to the contact to make a booking">
                         Contact
                     </a>
                 </li>
             </ul>
         </nav>
+        <!-- This lable works in tandem with the above check box, the 'for' will look for the 'id' in the checkbox and then display the nav bar  -->
         <label for="nav-toggle" class="nav-toggle-label">
+            <!-- the span is used within the label to display the 3 lines of the hamburger menu -->
             <span></span>
         </label>
     </header>
     <!--Content for contact page-->
     <main class="form-container">
-        <!-- Section 1 for a Google map -->
+        <!-- Section for the location of the company on Google maps -->
         <section class="form-map">
+            <!-- Embeded iframe that dispalys the map where the company is located -->
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2385.7231200078863!2d-9.078278222380776!3d53.276580479940286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485b96595dabd441%3A0x63f61826a9d00884!2sWestside%20Shopping%20Centre%2C%20B%C3%B3thar%20Sh%C3%A9amais%20U%C3%AD%20Chuirc%2C%20Galway!5e0!3m2!1sen!2sie!4v1690518214885!5m2!1sen!2sie"
                 allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
-        <!-- Section 2 for the contact form -->
+        <!-- Section that conatins the contact form -->
         <section class="form-item">
+            <!-- Form with an action that opens a page and displays atank you message when it is submitted -->
             <form action="thankyou.html" method="post" target="_blank">
+                <!-- Label for firstname -->
                 <label for="fname">First Name</label>
+                <!-- Input for first name that is required and a minimum lenght of 3 characters -->
                 <input type="text" id="fname" name="firstname" required minlength="3" placeholder="Your name..">
+                <!-- Label for last name -->
                 <label for="lname">Last Name</label>
+                <!-- Input for last name that is required and a minimum lenght of 3 characters -->
                 <input type="text" id="lname" name="lastname" required minlength="3" placeholder="Your last name..">
+                <!-- Label for phone number -->
                 <label for="pnum">Phone Number</label>
+                <!-- Input for phone number, not required, but must have a pattern of numbers only -->
                 <input type="text" id="pnum" name="phonenumber" pattern="[0-9]" placeholder="Your phone number..">
+                <!-- Label for email -->
                 <label for="email">Email</label>
+                <!-- Input for email, required, and must follow the correct email pattern -->
                 <input type="email" id="email" name="email" required
                     title="The domain portion of the email address is invalid (the portion after the @)."
                     pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$"
                     placeholder="Your email..">
+                <!-- Label for address -->
                 <label for="address">Address</label>
+                <!-- Input for address, not required -->
                 <input type="text" id="address" name="address" placeholder="Your address..">
+                <!-- Label for county -->
                 <label for="country">County</label>
+                <!-- List of conunties to choose from -->
                 <select id="country" name="country">
                     <option value="carlow">Carlow</option>
                     <option value="cavan">Cavan</option>
@@ -119,6 +144,7 @@
                         placeholder="Write here.."></textarea>
                 </select>
                 </br>
+                <!-- Submit button for the form -->
                 <input type="submit" value="Submit" class="btn">
             </form>
         </section>
@@ -127,23 +153,32 @@
     <footer>
         <!-- Left side of footer for contacting -->
         <div class="footer-left">
+            <!-- Contact information -->
             <p>Contact</p>
+            <!-- Unordered list, ul, of the contact information -->
             <ul>
+                <!-- List item, li, contacting the contact information -->
                 <li>
-                    <i class="fa fa-regular fa-envelope" style="color: #ffffff;"></i>
+                    <!-- Anchor, a, that sends opens an email with the companies email address in it -->
                     <a href="mailto: angus.friel.1986@gmail.com" target="_top" aria-label="Send us an email">
+                        <!-- Font awesome icon for the email contact informaiton -->
+                        <i class="fa fa-regular fa-envelope" style="color: #ffffff;"></i>
                         Email
                     </a>
                 </li>
                 <li>
+                    <!-- Anchor, a, for the phone number of the company -->
                     <a href="tel:085-12345678" aria-label="give us a call">
+                        <!-- Font awesome icon for a telephone -->
                         <i class="fa fa-solid fa-phone" style="color: #ffffff;"></i>
                         085-12345678
                     </a>
                 </li>
                 <li>
                 <li>
+                    <!-- Anchor, a, that links to the contact page with a map of the companies location -->
                     <a href="contact.html" aria-label="Go to the contact to make a booking">
+                        <!-- Font awesome icon of a location pin -->
                         <i class="fas fa-map-marker-alt" style="color: #ffffff;"></i>
                         Westside Shopping Centre, Galway
                     </a>
@@ -152,21 +187,29 @@
         </div>
         <!-- Right side of foot for social links -->
         <div class="footer-right">
+            <!-- Social media information -->
             <p>Social</p>
+            <!-- Unordered list, li, of the social media information -->
             <ul>
+                <!-- List items that conatin the social media information -->
                 <li>
+                    <!-- Anchor, a, that links to facebook -->
                     <a href="https://www.facebook.com/" target="_blank" aria-label="Go to out Facebook page">
+                        <!-- Font awesome icon of the facebook logo -->
                         <i class="fa fa-brands fa-facebook-f" style="color: #ffffff;"></i>
                         Facebook
                     </a>
                 </li>
                 <li>
+                    <!-- Anchor, a, that links to instagram -->
                     <a href="https://www.instagram.com/" target="_blank" aria-label="go to our instagram">
+                        <!-- Font awesome icon of the instagram logo -->
                         <i class="fa fa-brands fa-instagram" style="color: #ffffff;"></i>
                         Instagram
                     </a>
                 </li>
                 <li>
+                    <!-- Anchor, a, that links to youtube -->
                     <a href="https://www.youtube.com" target="_blank" aria-label="go to our youtube channel">
                         <i class="fa fa-brands fa-youtube" style="color: #ffffff;"></i>
                         Youtube
