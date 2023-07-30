@@ -214,13 +214,6 @@ img {
     color: white;
 }
 
-.part-one {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-}
-
 /* Style the main container on classes.html */
 .row-container {
     margin-top: 10em !important;
@@ -266,8 +259,6 @@ img {
 
 /* Style the cards on the teacher page */
 .teach-item {
-    color: white;
-    margin: 0.5em;
     width: 100rem;
     line-height: 2;
     display: flex;
@@ -287,43 +278,6 @@ img {
 
 .image-section {
     display: flex;
-}
-
-/* Style the footer */
-footer {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background: #000;
-    color: white;
-    width: 100%;
-    bottom: 0;
-
-}
-
-footer li a {
-    color: white;
-    text-decoration: none;
-}
-
-footer li a:visited {
-    text-decoration: none
-}
-
-footer li a:hover {
-    color: white;
-    padding-bottom: 0.1rem;
-    border-bottom-style: solid;
-    border-bottom-width: 0.1rem;
-    width: fit-content;
-}
-
-/* Style the lists */
-li {
-    list-style-type: none;
-    line-height: 2;
-    color: white;
-    cursor: pointer;
 }
 
 .form-container {
@@ -404,10 +358,65 @@ textarea {
     resize: none;
 }
 
+/* Style the footer */
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #000;
+    color: white;
+    width: 100%;
+    bottom: 0;
+
+}
+
+footer li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer li a:visited {
+    text-decoration: none
+}
+
+footer li a:hover {
+    color: white;
+    padding-bottom: 0.1rem;
+    border-bottom-style: solid;
+    border-bottom-width: 0.1rem;
+    width: fit-content;
+}
+
+/* Style the lists */
+li {
+    list-style-type: none;
+    line-height: 2;
+    color: white;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+    .teach-container {
+        display: unset;
+        box-shadow: var(--boxshadow);
+        background: rgba(0, 0, 0, 0.85);
+        margin-bottom: 1em;
+    }
+
+    .teach-item {
+        display: unset;
+        margin-bottom: 1em;
+    }
+}
+
 /* Media query for responsive nav bar */
 @media screen and (min-width: 800px) {
     .nav-toggle-label {
         display: none;
+    }
+
+    .teach-container {
+        flex-direction: row;
     }
 
     header {

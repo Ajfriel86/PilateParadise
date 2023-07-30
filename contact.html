@@ -1,182 +1,180 @@
+<!-- This is an information tag so the web browser understands exactly what type of document to expect -->
 <!DOCTYPE html>
+
+<!-- This is the root element which defines the whole document -->
 <html>
 
 <head>
+    <!-- Meta tags that help to define the metadata of this HTML document -->
+    <!-- utf-8 is a default characrter set used in HTML -->
     <meta charset="utf-8">
+    <!-- this helps to ensures internet explorer is able to render a web page with the latest rendering engine -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- Page title -->
+    <!-- Page title which is used to display search results and can be viewed on the window tab -->
     <title>Pilates Paradise</title>
-    <!-- Favicon -->
+    <!-- A Favicon is the icon located on the tab document -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <!-- Author -->
+    <!-- Author is ued to tell others who built this html document -->
     <meta name="author" content="Angus Friel">
-    <!-- Keywords -->
+    <!-- Keywords, which are used by serach engines. So more words descirbing the site will result in more information for the search engines -->
     <meta name="keywords"
         content="Pilates, Yoga, Classes, Teachers, Mindfullness, Group Classes, Online Classes, Private Classes, Reformer Pilates, Workout, Fitness, Health, Mental Health, Meditation, Relaxing, Mind Body Spirit, Personal Training">
     <meta name="description" content="Pilates Paradise">
-    <!-- Viewport -->
+    <!-- The Viewport is the area of the screen where web content is viewed -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--Style sheet CSS-->
+    <!-- Cascading Style Sheet, or CSS, for this html document which is used to style each page -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Font awesome -->
+    <!-- Font awesome is imported for icons used in the footer for this html document -->
     <script src="https://kit.fontawesome.com/6d30fc82e7.js" crossorigin="anonymous"></script>
 </head>
 
+<!-- This defines the documents body which contains all the content viewed from this html document -->
+
 <body>
-
-    <body>
-        <!-- Header with logo & nav bar, nav bar will then convert to a hamburger menu on mobile or tablet -->
-        <header class="header">
-            <h1>
-                <a href="index.html" class="logo" aria-label="go back to our home page">Pilates Paradise</a>
-            </h1>
-            <input type="checkbox" id="nav-toggle" class="nav-toggle">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html" aria-label="Go to the home page to learn about what we offer">
-                            Home</a></li>
-                    <li>
-                        <a href="classes.html" aria-label="Go to the classes page for our weekly timetable">
-                            Classes
-                        </a>
-                    </li>
-                    <li>
-                        <a href="teachers.html" aria-label="Go to the teachers page to learn about our teachers">
-                            Teachers
-                        </a>
-                    </li>
-                    <li>
-                        <a href="contact.html" aria-label="Go to the contact to make a booking">
-                            Contact
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <label for="nav-toggle" class="nav-toggle-label">
-                <span></span>
-            </label>
-        </header>
-        <!--Content for contact page-->
-        <main class="form-container">
-            <!-- Section 1 for a Google map -->
-            <section class="form-map">
-
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2385.7231200078863!2d-9.078278222380776!3d53.276580479940286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485b96595dabd441%3A0x63f61826a9d00884!2sWestside%20Shopping%20Centre%2C%20B%C3%B3thar%20Sh%C3%A9amais%20U%C3%AD%20Chuirc%2C%20Galway!5e0!3m2!1sen!2sie!4v1690518214885!5m2!1sen!2sie"
-                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </section>
-            <!-- Section 2 for the contact form -->
-            <section class="form-item">
-                <form action="thankyou.html" method="post" target="_blank">
-
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname" required minlength="3" placeholder="Your name..">
-
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lastname" required minlength="3" placeholder="Your last name..">
-
-                    <label for="pnum">Phone Number</label>
-                    <input type="text" id="pnum" name="phonenumber" pattern="[0-9]" placeholder="Your phone number..">
-
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required
-                        title="The domain portion of the email address is invalid (the portion after the @)."
-                        pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$"
-                        placeholder="Your email..">
-
-                    <label for="address">Address</label>
-
-                    <input type="text" id="address" name="address" placeholder="Your address..">
-                    <label for="country">County</label>
-
-                    <select id="country" name="country">
-                        <option value="carlow">Carlow</option>
-                        <option value="cavan">Cavan</option>
-                        <option value="care">Clare</option>
-                        <option value="cork">Cork</option>
-                        <option value="donegal">Donegal</option>
-                        <option value="dublin">Dublin</option>
-                        <option value="galway">Galway</option>
-                        <option value="kerry">Kerry</option>
-                        <option value="kildare">Kildare</option>
-                        <option value="kilkenny">Kilkenny</option>
-                        <option value="laois">Laois</option>
-                        <option value="leitrim">Leitrim</option>
-                        <option value="limerick">Limerick</option>
-                        <option value="longford">Longford</option>
-                        <option value="louth">Louth</option>
-                        <option value="mayo">Mayo</option>
-                        <option value="meath">Meath</option>
-                        <option value="monaghan">Monaghan</option>
-                        <option value="offaly">Offaly</option>
-                        <option value="rosscommon">Rosscommon</option>
-                        <option value="sligo">Sligo</option>
-                        <option value="tipperary">Tipperary</option>
-                        <option value="waterford">Waterford</option>
-                        <option value="westmeath">Westmeath</option>
-                        <option value="wexford">Wexford</option>
-                        <option value="wicklow">Wicklow</option>
-                        <textarea id="subject" name="subject" rows="10" cols="50" required
-                            placeholder="Write here.."></textarea>
-                    </select>
-                    </br>
-                    <input type="submit" value="Submit" class="btn">
-                </form>
-            </section>
-        </main>
-        <!-- Footer -->
-        <footer>
-            <!-- Left side of footer for contacting -->
-            <div class="footer-left">
-                <p>Contact</p>
-                <ul>
-                    <li>
-                        <i class="fa fa-regular fa-envelope" style="color: #ffffff;"></i>
-                        <a href="mailto: angus.friel.1986@gmail.com" target="_top" aria-label="Send us an email">
-                            Email
-                        </a>
-                    </li>
-                    <li>
-                        <a href="tel:085-12345678" aria-label="give us a call">
-                            <i class="fa fa-solid fa-phone" style="color: #ffffff;"></i>
-                            085-12345678
-                        </a>
-                    </li>
-                    <li>
-                    <li>
-                        <a href="contact.html" aria-label="Go to the contact to make a booking">
-                            <i class="fas fa-map-marker-alt" style="color: #ffffff;"></i>
-                            Westside Shopping Centre, Galway
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Right side of foot for social links -->
-            <div class="footer-right">
-                <p>Social</p>
-                <ul>
-                    <li>
-                        <a href="https://www.facebook.com/" target="_blank" aria-label="Go to out Facebook page">
-                            <i class="fa fa-brands fa-facebook-f" style="color: #ffffff;"></i>
-                            Facebook
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/" target="_blank" aria-label="go to our instagram">
-                            <i class="fa fa-brands fa-instagram" style="color: #ffffff;"></i>
-                            Instagram
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com" target="_blank" aria-label="go to our youtube channel">
-                            <i class="fa fa-brands fa-youtube" style="color: #ffffff;"></i>
-                            Youtube
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
-    </body>
+    <!-- Header with logo & nav bar, nav bar will then convert to a hamburger menu on mobile or tablet -->
+    <header class="header">
+        <h1>
+            <a href="index.html" class="logo" aria-label="go back to our home page">Pilates Paradise</a>
+        </h1>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html" aria-label="Go to the home page to learn about what we offer">
+                        Home</a></li>
+                <li>
+                    <a href="classes.html" aria-label="Go to the classes page for our weekly timetable">
+                        Classes
+                    </a>
+                </li>
+                <li>
+                    <a href="teachers.html" aria-label="Go to the teachers page to learn about our teachers">
+                        Teachers
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html" aria-label="Go to the contact to make a booking">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+    </header>
+    <!--Content for contact page-->
+    <main class="form-container">
+        <!-- Section 1 for a Google map -->
+        <section class="form-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2385.7231200078863!2d-9.078278222380776!3d53.276580479940286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485b96595dabd441%3A0x63f61826a9d00884!2sWestside%20Shopping%20Centre%2C%20B%C3%B3thar%20Sh%C3%A9amais%20U%C3%AD%20Chuirc%2C%20Galway!5e0!3m2!1sen!2sie!4v1690518214885!5m2!1sen!2sie"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <!-- Section 2 for the contact form -->
+        <section class="form-item">
+            <form action="thankyou.html" method="post" target="_blank">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" required minlength="3" placeholder="Your name..">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" required minlength="3" placeholder="Your last name..">
+                <label for="pnum">Phone Number</label>
+                <input type="text" id="pnum" name="phonenumber" pattern="[0-9]" placeholder="Your phone number..">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required
+                    title="The domain portion of the email address is invalid (the portion after the @)."
+                    pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$"
+                    placeholder="Your email..">
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" placeholder="Your address..">
+                <label for="country">County</label>
+                <select id="country" name="country">
+                    <option value="carlow">Carlow</option>
+                    <option value="cavan">Cavan</option>
+                    <option value="care">Clare</option>
+                    <option value="cork">Cork</option>
+                    <option value="donegal">Donegal</option>
+                    <option value="dublin">Dublin</option>
+                    <option value="galway">Galway</option>
+                    <option value="kerry">Kerry</option>
+                    <option value="kildare">Kildare</option>
+                    <option value="kilkenny">Kilkenny</option>
+                    <option value="laois">Laois</option>
+                    <option value="leitrim">Leitrim</option>
+                    <option value="limerick">Limerick</option>
+                    <option value="longford">Longford</option>
+                    <option value="louth">Louth</option>
+                    <option value="mayo">Mayo</option>
+                    <option value="meath">Meath</option>
+                    <option value="monaghan">Monaghan</option>
+                    <option value="offaly">Offaly</option>
+                    <option value="rosscommon">Rosscommon</option>
+                    <option value="sligo">Sligo</option>
+                    <option value="tipperary">Tipperary</option>
+                    <option value="waterford">Waterford</option>
+                    <option value="westmeath">Westmeath</option>
+                    <option value="wexford">Wexford</option>
+                    <option value="wicklow">Wicklow</option>
+                    <textarea id="subject" name="subject" rows="10" cols="50" required
+                        placeholder="Write here.."></textarea>
+                </select>
+                </br>
+                <input type="submit" value="Submit" class="btn">
+            </form>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <!-- Left side of footer for contacting -->
+        <div class="footer-left">
+            <p>Contact</p>
+            <ul>
+                <li>
+                    <i class="fa fa-regular fa-envelope" style="color: #ffffff;"></i>
+                    <a href="mailto: angus.friel.1986@gmail.com" target="_top" aria-label="Send us an email">
+                        Email
+                    </a>
+                </li>
+                <li>
+                    <a href="tel:085-12345678" aria-label="give us a call">
+                        <i class="fa fa-solid fa-phone" style="color: #ffffff;"></i>
+                        085-12345678
+                    </a>
+                </li>
+                <li>
+                <li>
+                    <a href="contact.html" aria-label="Go to the contact to make a booking">
+                        <i class="fas fa-map-marker-alt" style="color: #ffffff;"></i>
+                        Westside Shopping Centre, Galway
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- Right side of foot for social links -->
+        <div class="footer-right">
+            <p>Social</p>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank" aria-label="Go to out Facebook page">
+                        <i class="fa fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+                        Facebook
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank" aria-label="go to our instagram">
+                        <i class="fa fa-brands fa-instagram" style="color: #ffffff;"></i>
+                        Instagram
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com" target="_blank" aria-label="go to our youtube channel">
+                        <i class="fa fa-brands fa-youtube" style="color: #ffffff;"></i>
+                        Youtube
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
 
 </html>
