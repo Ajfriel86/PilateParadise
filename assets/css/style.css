@@ -194,6 +194,7 @@ nav a:hover {
     box-shadow: var(--boxshadow);
 }
 
+/* Puts content in row formation as the rest is added with columns */
 .rows {
     width: 100%;
     display: flex;

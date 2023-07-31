@@ -72,7 +72,7 @@ The goal of delivering this site is to fullfil an end-user's needs when searchin
 
 1. Thank You Page
 
-    - This page is displayed after the form has been filled in and validated
+    - This page is displayed after the form has been filled in, validated, and submitted
 
     ![thankyou page](./README_images/thankyou_page.png)
 ---
@@ -104,6 +104,26 @@ The design for this site was inspired by my local [Pilates Studio](https://galwa
 ![color swatch](./README_images/colour_swatch.png)
 
 ## Testing
+
+While testing the site there were some errors and issues. One of these issues was two of the flexboxes on the contact page overlapping when resizing the screen:
+
+![flexbox overlap](./README_images/Flexbox_Overlap.png)
+
+This took some time to debug but after comparing the different containers from other pages I realized I had position: absolute set to the iframe of the google maps. After removing this and setting some media queries, the issue was resolved. 
+
+Another issue was with the layout of the teachers.html page. As for the cards on this page, I wanted them to be in columns and not rows. As the other pages were in rows, there were some conflicting issues. So this was debugged using Chromes Devc Tools. After setting the background color of the image and text sections to different colors, it made it easier to visualize and debug. 
+
+![teachers debugging](./README_images/Teacher_Debug.png)
+
+Once I was able to visualize the issue and then work within Chrome's Dev Tools, it made it easy to rework the cards so they are viewed horizontally.
+
+![Horizontal View](./README_images/Teacher_Hor.png)
+
+### Validation
+
+Once Testing was compelted I moved on to validating my
+
+
 
 ---
 
