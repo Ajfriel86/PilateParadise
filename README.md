@@ -1,5 +1,7 @@
 # Pilates Paradise
 
+[View Deployed Site Here](https://ajfriel86.github.io/pilatesparadise/)
+
 ## About
 
 The goal of delivering this site is to fullfil an end-user's needs when searching for a Pilates studio in their area. The site comprises of information regarding various classes and when they are on, as well as teacher information who guide the classes.
