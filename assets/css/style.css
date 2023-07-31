@@ -59,7 +59,7 @@ header {
 
 /*  */
 .nav-toggle:focus~.nav-toggle-label {
-    outline: 3px solid rgba(lightblue, .75);
+    outline: 3px solid rgba(#ffffff, .75);
 }
 
 /* Styling/positioning the label used for the hamburger menu */
@@ -369,7 +369,7 @@ input {
 
 /* stlye the input when it is clicked on, on the form on the contact.html page */
 input:focus {
-    outline: 3px solid 77ED8E;
+    outline: 3px solid #77ED8E;
 }
 
 /* stlye the textarea on the form on the contact.html page */
