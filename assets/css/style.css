@@ -16,6 +16,7 @@
 
 /* Style the body */
 body {
+    min-height: 100vh;
     display: flex;
     margin: 0;
     font-family: 'Maven Pro', Verdana, sans-serif;
@@ -302,29 +303,22 @@ img {
     justify-content: space-evenly;
     align-content: center;
     flex-wrap: wrap;
-    margin-top: 10em !important;
+    margin-top: 20em !important;
     margin-bottom: 10em !important;
-
 }
 
 /* Styles the items within the container on the contact.html page */
 .form-item {
     box-shadow: var(--boxshadow);
     border-style: solid;
-}
-
-/* stlyes the google map on the contact.html page */
-.form-map {
-    position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    margin-top: 10em !important;
-    margin-bottom: 10em !important;
+    position: relative;
 }
 
 /* styles the iframe on the contact.html page */
-.form-map iframe {
+.form-item iframe {
     box-shadow: var(--boxshadow);
     border-style: solid;
     position: absolute;
@@ -387,14 +381,13 @@ textarea {
 
 /* Style the footer on every page */
 footer {
+    margin-top: auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     background: #000;
     color: white;
     width: 100%;
-    bottom: 0;
-
 }
 
 /* style the anchor tag within a list item on the footer of every page */
@@ -425,7 +418,32 @@ li {
     cursor: pointer;
 }
 
-/* Media query for the mobile/tablet */
+/* Media query for the tablet */
+@media only screen and (max-width: 1200px) {
+    .teach-container {
+        display: unset;
+        box-shadow: var(--boxshadow);
+        background: rgba(0, 0, 0, 0.85);
+        margin-bottom: 1em;
+    }
+
+    .teach-item {
+        display: unset;
+        margin-bottom: 1em;
+    }
+
+    .form-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-top: 10em;
+    }
+
+}
+
+/* Media query for the mobile */
 @media only screen and (max-width: 800px) {
     .teach-container {
         display: unset;
@@ -438,6 +456,15 @@ li {
         display: unset;
         margin-bottom: 1em;
     }
+
+    .form-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
 }
 
 /* Media query for responsive nav bar */
