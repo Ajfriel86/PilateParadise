@@ -1,8 +1,8 @@
 <!-- This is an information tag so the web browser understands exactly what type of document to expect -->
 <!DOCTYPE html>
 
-<!-- This is the root element which defines the whole document -->
-<html>
+<!-- This is the root element which defines the whole document and states this is an englisgh document -->
+<html lang="en">
 
 <head>
     <!-- Meta tags that help to define the metadata of this HTML document -->
@@ -77,7 +77,7 @@
     <!--Content for contact page-->
     <main class="form-container">
         <!-- Section for the location of the company on Google maps -->
-        <section class="form-map">
+        <section class="form-item from-map">
             <!-- Embeded iframe that dispalys the map where the company is located -->
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2385.7231200078863!2d-9.078278222380776!3d53.276580479940286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485b96595dabd441%3A0x63f61826a9d00884!2sWestside%20Shopping%20Centre%2C%20B%C3%B3thar%20Sh%C3%A9amais%20U%C3%AD%20Chuirc%2C%20Galway!5e0!3m2!1sen!2sie!4v1690518214885!5m2!1sen!2sie"
@@ -86,7 +86,7 @@
         <!-- Section that conatins the contact form -->
         <section class="form-item">
             <!-- Form with an action that opens a page and displays atank you message when it is submitted -->
-            <form action="thankyou.html" method="post" target="_blank">
+            <form method="post" action="thankyou.html" target="_blank">
                 <!-- Label for firstname -->
                 <label for="fname">First Name</label>
                 <!-- Input for first name that is required and a minimum lenght of 3 characters -->
@@ -160,7 +160,7 @@
                 <!-- List item, li, contacting the contact information -->
                 <li>
                     <!-- Anchor, a, that sends opens an email with the companies email address in it -->
-                    <a href="mailto: angus.friel.1986@gmail.com" target="_top" aria-label="Send us an email">
+                    <a href="mailto:angus.friel.1986@gmail.com" target="_top" aria-label="Send us an email">
                         <!-- Font awesome icon for the email contact informaiton -->
                         <i class="fa fa-regular fa-envelope" style="color: #ffffff;"></i>
                         Email

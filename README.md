@@ -1,6 +1,6 @@
 # Pilates Paradise
 
-[View Deployed Site Here](https://ajfriel86.github.io/pilatesparadise/)
+[View Deployed Site Here](https://ajfriel86.github.io/PilatesParadise/)
 
 ## About
 
