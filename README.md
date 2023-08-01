@@ -121,23 +121,34 @@ Once I was able to visualize the issue and then work within Chrome's Dev Tools, 
 
 After initial testing, I then used Chrome's Dev Tools to check the performance and accessibility of the site and on all of its pages. This was done using the Lighthouse function with Dev Tools. 
 
-First, I checked the index.html page, which gave me a performance of 75%, accessibility of 92% and 100% for Best practices and SEO.
+My first Lighthouse report gave me a performance of 75%, accessibility of 92% and 100% for Best practices and SEO.
 
 ![Lighthouse landing page](./README_images/lighthouse1.png)
 
-I then tried to convert some of the images from .jpg to .webp But this lowered my performance from 75% to 45%
+I then tried to convert some of the images from jpg to webp But this lowered my performance from 75% to 45%. The reason for this could be that I used an online converter, rather than using cwebp command-line tool or the Imagemin WebP plugin.
 
 ![Lowered Performance](./README_images/lighthouse_webp.png)
 
-As a reslut I changed the images back to .jpg but I did convert the background image to a .png file type and this really help with the performance. 
+As a result, I changed the images back to .jpg but I did convert the background image to a .png file type and this helped with the performance. 
 
-![]
+![Higher Performance](./README_images/lighthouse2.png)
 
 
 
 ### Validation
 
-Once Testing was completed I moved on to validating my
+Once Testing was completed I moved on to validating my site using the [W3C Validator](https://validator.w3.org/). My first validation gave me the following warning:
+
+![Index.html Warning](./README_images/W3_Index.png)
+
+As it is best practice to give section tags headings I removed this warning by wrapping my sections in an outer div. 
+
+![Index.html Warning](./README_images/W3_Index2.png)
+
+The classes page also had the same warning that was removed in the same way:
+
+![Classes.html Warning](./README_images/w3_classes.png)
+![Classes.html Warning]()
 
 
 
@@ -164,7 +175,7 @@ The inspiration for this website comes from the [Galway Pilates Studio](https://
 
 For a deeper understanding of hamburger menus with no JavaScript, meta tags, information tags and more knowledge regarding HTML and CSS documents I used the following recourses:
 
-  -  [W3 Schools - HTML Elemnts](https://www.w3schools.com/html/html_elements.asp)
+  -  [W3 Schools - HTML Elements](https://www.w3schools.com/html/html_elements.asp)
    - [W3 Schools - Doctype](https://www.w3schools.com/tags/tag_doctype.asp)
    - [Geeks for Geeks - http-equivx-ua](https://www.geeksforgeeks.org/what-does-meta-http-equivx-ua-compatible-contentieedge-do/)
    - [HubSpot - utf-8](https://blog.hubspot.com/website/what-is-utf-8)

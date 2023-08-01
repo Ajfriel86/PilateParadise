@@ -43,7 +43,6 @@ header {
 
 /* Style the logo within the header */
 .logo {
-    float: left;
     color: #000;
     margin-left: 3em;
     text-decoration: none;
@@ -424,6 +423,15 @@ li {
     color: white;
     cursor: pointer;
     padding-right: 2rem;
+}
+
+footer ul {
+    padding: 0;
+    margin: 0;
+}
+
+footer p {
+    padding: 2em 0 !important;
 }
 
 /* Media query for the tablet */
