@@ -328,11 +328,9 @@ img {
 }
 
 /* styles the iframe on the contact.html page */
-.form-item iframe {
-    box-shadow: var(--boxshadow);
-    border-style: solid;
-    height: 700px;
-    width: 500px;
+iframe {
+    height: 100%;
+    width: 100%;
 }
 
 /* Styles the form on the contact.html page */
@@ -442,10 +440,6 @@ li {
         flex-wrap: wrap;
         flex-direction: column;
         margin-top: 5rem;
-    }
-
-    iframe {
-        width: 10%;
     }
 }
 
