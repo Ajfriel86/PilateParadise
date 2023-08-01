@@ -82,15 +82,15 @@
         </div>
         <div class="rows">
             <!-- Section for the location of the company on Google maps -->
-            <section class="form-item from-map">
+            <div class="form-item from-map">
                 <!-- Embeded iframe that dispalys the map where the company is located -->
                 <iframe title="google map of studio location"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2385.7231200078863!2d-9.078278222380776!3d53.276580479940286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485b96595dabd441%3A0x63f61826a9d00884!2sWestside%20Shopping%20Centre%2C%20B%C3%B3thar%20Sh%C3%A9amais%20U%C3%AD%20Chuirc%2C%20Galway!5e0!3m2!1sen!2sie!4v1690518214885!5m2!1sen!2sie"
                     allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
-            </section>
+            </div>
             <!-- Section that conatins the contact form -->
-            <section class="form-item">
+            <div class="form-item">
                 <!-- Form with an action that opens a page and displays atank you message when it is submitted -->
                 <form method="get" action="thankyou.html" target="_blank">
                     <!-- Label for firstname -->
@@ -146,13 +146,16 @@
                         <option value="westmeath">Westmeath</option>
                         <option value="wexford">Wexford</option>
                         <option value="wicklow">Wicklow</option>
+                    </select>
+                    <select>
                         <textarea id="subject" name="subject" rows="10" cols="50" required placeholder="Write here.."
-                            aria-label="enter your comments here"></textarea>
+                            aria-label="enter your comments here">
+                        </textarea>
                     </select>
                     <!-- Submit button for the form -->
                     <input type="submit" value="Submit" class="btn" aria-label="click here to submit form">
                 </form>
-            </section>
+            </div>
         </div>
     </main>
     <!-- Footer -->
