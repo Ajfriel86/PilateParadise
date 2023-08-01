@@ -4,7 +4,7 @@
 
 ## About
 
-The goal of delivering this site is to fullfil an end-user's needs when searching for a Pilates studio in their area. The site comprises of information regarding various classes and when they are on, as well as teacher information who guide the classes.
+The goal of delivering this site is to fulfill an end-user's needs when searching for a Pilates studio in their area. The site comprises of information regarding various classes and when they are on, as well as teacher information who guides the classes.
 
 ---
 
@@ -50,31 +50,31 @@ The goal of delivering this site is to fullfil an end-user's needs when searchin
 
    - Upon visiting the site the initial page will display 3 cards with various options of different classes that are available
 
-    ![landing page](./README_images/landing_page.png)
+    ![landing page](./Readmeimages/landing_page.png)
 
 1. Classes Page
 
     - The following page has a timetable laid out for the various classes and when they are on
 
-    ![classes page](./README_images/classes_page.png)
+    ![classes page](./Readmeimages/classes_page.png)
 
 1. Teachers Page
 
     - This page will display information regarding the teachers who guide the classes at the studio
 
-    	![teachers page](./README_images/teachers_page.png)
+    	![teachers page](./Readmeimages/teachers_page.png)
 
 1. Contact Page
 
     - This page will display a map with the location of the studio as well as a contact form so end users can reach out to the studio about any queries or if they wish to book a class
 
-    ![contact page](./README_images/contact_page.png)
+    ![contact page](./Readmeimages/contact_page.png)
 
 1. Thank You Page
 
     - This page is displayed after the form has been filled in, validated, and submitted
 
-    ![thankyou page](./README_images/thankyou_page.png)
+    ![thankyou page](./Readmeimages/thankyou_page.png)
 ---
 
 ## Technologies used
@@ -101,53 +101,55 @@ The goal of delivering this site is to fullfil an end-user's needs when searchin
 
 The design for this site was inspired by my local [Pilates Studio](https://galwaypilates.com/) as well as some searching on color design. I used the [Abobe Color Wheel](https://color.adobe.com/create/color-wheel) and chose a base color to work off then went with monochromatic coloring.
     
-![color swatch](./README_images/colour_swatch.png)
+![color swatch](./Readmeimages/colour_swatch.png)
 
 ## Testing
 
+### Bugs
+
 While testing the site there were some errors and issues. One of these issues was two of the flexboxes on the contact page overlapping when resizing the screen:
 
-![flexbox overlap](./README_images/Flexbox_Overlap.png)
+![flexbox overlap](./Readmeimages/flexbox_overlap.png)
 
 This took some time to debug but after comparing the different containers from other pages I realized I had position: absolute set to the iframe of the google maps. After removing this and setting some media queries, the issue was resolved. 
 
 Another issue was with the layout of the teachers.html page. As for the cards on this page, I wanted them to be in columns and not rows. As the other pages were in rows, there were some conflicting issues. So this was debugged using Chromes Devc Tools. After setting the background color of the image and text sections to different colors, it made it easier to visualize and debug. 
 
-![teachers debugging](./README_images/Teacher_Debug.png)
+![teachers debugging](./Readmeimages/teacher_debug.png)
 
 Once I was able to visualize the issue and then work within Chrome's Dev Tools, it made it easy to rework the cards so they are viewed horizontally.
 
-![Horizontal View](./README_images/Teacher_Hor.png)
+![Horizontal View](./Readmeimages/teacher_horizontal.png)
 
 After initial testing, I then used Chrome's Dev Tools to check the performance and accessibility of the site and on all of its pages. This was done using the Lighthouse function with Dev Tools. 
 
 My first Lighthouse report gave me a performance of 75%, accessibility of 92% and 100% for Best practices and SEO.
 
-![Lighthouse landing page](./README_images/lighthouse1.png)
+![Lighthouse landing page](./Readmeimages/lighthouse1.png)
 
 I then tried to convert some of the images from jpg to webp But this lowered my performance from 75% to 45%. The reason for this could be that I used an online converter, rather than using cwebp command-line tool or the Imagemin WebP plugin.
 
-![Lowered Performance](./README_images/lighthouse_webp.png)
+![Lowered Performance](./Readmeimages/lighthouse_webp.png)
 
 As a result, I changed the images back to .jpg but I did convert the background image to a .png file type and this helped with the performance. 
 
-![Higher Performance](./README_images/lighthouse2.png)
+![Higher Performance](./Readmeimages/lighthouse2.png)
 
 
 
-### Validation
+### HTML Validation
 
 Once Testing was completed I moved on to validating my site using the [W3C Validator](https://validator.w3.org/). My first validation gave me the following warning:
 
-![Index.html Warning](./README_images/W3_Index.png)
+![Index.html Warning](./Readmeimages/w3_index.png)
 
 As it is best practice to give section tags headings I removed this warning by wrapping my sections in an outer div. 
 
-![Index.html Warning](./README_images/W3_Index2.png)
+![Index.html Warning](./Readmeimages/w3_index2.png)
 
 The classes page also had the same warning that was removed in the same way:
 
-![Classes.html Warning](./README_images/w3_classes.png)
+![Classes.html Warning](./Readmeimages/w3_classes.png)
 ![Classes.html Warning]()
 
 
@@ -156,16 +158,20 @@ The classes page also had the same warning that was removed in the same way:
 
 ## Deployment
 
-This website was constructed in GitPod and deployed on GitHub. The steps taken to deploy this website from its [GitHub Repository](https://github.com/Ajfriel86/PilatesParadise) are as follows:
+### Deployment to Git Hub Pages
+
+This website was constructed in VS Code and deployed on GitHub. The steps taken to deploy this website from its [GitHub Repository](https://github.com/Ajfriel86/PilatesParadise) are as follows:
 
 - Log into GitHub
 - Go to the list of repositories on the left-hand side of the screen.
-- Click on the repository - Ajfriel86/pilatesparadise
+- Click on the repository - [](Ajfriel86/pilatesparadise)
 - Choose the settings tab from the menu items across the top of the page; it is the ninth choice and last option on the menu items.
-- Once the settings page has loaded scroll down to GitHub Pages.
+- Once the settings page has loaded scroll down to Pages.
 - In the source section, choose the master branch.
 - On selecting this the page is automatically refreshed and the website is deployed.
 - A link to the website is then displayed, this is the deployed website address.
+
+How to clone Repo!!!
 
 ---
 
@@ -194,16 +200,16 @@ For a deeper understanding of hamburger menus with no JavaScript, meta tags, inf
 
 ### Home page:
 
-![wireframe landing page](./README_images/wire_frame_landing_page.png)
+![wireframe landing page](./Readmeimages/wire_frame_landing_page.png)
 
 ### Classes page:
 
-![wireframe classes page](./README_images/wireframe_classes_page.png)
+![wireframe classes page](./Readmeimages/wireframe_classes_page.png)
 
 ### Teachers page:
 
 ![wireframe teachers page](./README_images/wireframe_teachers_page.png)
-
+Readmeimages
 ### Contact page:
 
-![wireframe contact page](./README_images/wireframe_contact_page.png)
+![wireframe contact page](./Readmeimages/wireframe_contact_page.png)
