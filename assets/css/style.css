@@ -167,6 +167,10 @@ nav a:hover {
 
 }
 
+.none {
+    display: none;
+}
+
 /* Style for main container on index.html */
 .container {
     display: flex;
@@ -201,6 +205,7 @@ nav a:hover {
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin-top: 5em;
 }
 
 /* Style all the paragraphs */
@@ -292,6 +297,7 @@ img {
 
 /* Style the cards on the teachers.html page */
 .teach-item {
+    margin-top: 5em !important;
     background: rgba(0, 0, 0, 0.85);
     width: 100rem;
     line-height: 2;
@@ -327,6 +333,10 @@ img {
     box-shadow: var(--boxshadow);
     border-style: solid;
     position: relative;
+}
+
+.form-item .from-map {
+    display: none;
 }
 
 /* styles the iframe on the contact.html page */
