@@ -16,7 +16,7 @@
 
 /* Style the body */
 body {
-
+    height: 100vh;
     display: flex;
     margin: 0;
     font-family: 'Maven Pro', Verdana, sans-serif;
