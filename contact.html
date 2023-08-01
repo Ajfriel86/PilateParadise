@@ -69,7 +69,7 @@
             </ul>
         </nav>
         <!-- This lable works in tandem with the above check box, the 'for' will look for the 'id' in the checkbox and then display the nav bar  -->
-        <label for="nav-toggle" class="nav-toggle-label">
+        <label for="nav-toggle" class="nav-toggle-label" aria-label="toggle here to view the navigation menu">
             <!-- the span is used within the label to display the 3 lines of the hamburger menu -->
             <span></span>
         </label>
@@ -90,32 +90,33 @@
             <!-- Section that conatins the contact form -->
             <section class="form-item">
                 <!-- Form with an action that opens a page and displays atank you message when it is submitted -->
-                <form method="post" action="thankyou.html" target="_blank">
+                <form method="get" action="thankyou.html" target="_blank">
                     <!-- Label for firstname -->
-                    <label for="fname">First Name</label>
+                    <label for="fname" aria-label="enter your first name">First Name</label>
                     <!-- Input for first name that is required and a minimum lenght of 3 characters -->
                     <input type="text" id="fname" name="firstname" required minlength="3" placeholder="Your name..">
                     <!-- Label for last name -->
-                    <label for="lname">Last Name</label>
+                    <label for="lname" aria-label="enter your last name">Last Name</label>
                     <!-- Input for last name that is required and a minimum lenght of 3 characters -->
                     <input type="text" id="lname" name="lastname" required minlength="3" placeholder="Your last name..">
                     <!-- Label for phone number -->
-                    <label for="pnum">Phone Number</label>
+                    <label for="pnum" aria-label="enter your phone number">Phone Number</label>
                     <!-- Input for phone number, not required, but must have a pattern of numbers only -->
-                    <input type="text" id="pnum" name="phonenumber" pattern="[0-9]" placeholder="Your phone number..">
+                    <input type="text" id="pnum" name="phonenumber" pattern="[0-9]" maxlength="10"
+                        placeholder="Your phone number..">
                     <!-- Label for email -->
-                    <label for="email">Email</label>
+                    <label for="email" aria-label="enter your email">Email</label>
                     <!-- Input for email, required, and must follow the correct email pattern -->
                     <input type="email" id="email" name="email" required
                         title="The domain portion of the email address is invalid (the portion after the @)."
                         pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$"
                         placeholder="Your email..">
                     <!-- Label for address -->
-                    <label for="address">Address</label>
+                    <label for="address" aria-label="enter your address">Address</label>
                     <!-- Input for address, not required -->
                     <input type="text" id="address" name="address" placeholder="Your address..">
                     <!-- Label for county -->
-                    <label for="country">County</label>
+                    <label for="country" aria-label="selete your county">County</label>
                     <!-- List of conunties to choose from -->
                     <select id="country" name="country">
                         <option value="carlow">Carlow</option>
@@ -144,11 +145,12 @@
                         <option value="westmeath">Westmeath</option>
                         <option value="wexford">Wexford</option>
                         <option value="wicklow">Wicklow</option>
-                        <textarea id="subject" name="subject" rows="10" cols="50" required placeholder="Write here..">
+                        <textarea id="subject" name="subject" rows="10" cols="50" required placeholder="Write here.."
+                            aria-label="enter your comments here">
                         </textarea>
                     </select>
                     <!-- Submit button for the form -->
-                    <input type="submit" value="Submit" class="btn">
+                    <input type="submit" value="Submit" class="btn" aria-label="click here to submit form">
                 </form>
             </section>
         </div>
