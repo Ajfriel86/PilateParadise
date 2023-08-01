@@ -119,9 +119,25 @@ Once I was able to visualize the issue and then work within Chrome's Dev Tools, 
 
 ![Horizontal View](./README_images/Teacher_Hor.png)
 
+After initial testing, I then used Chrome's Dev Tools to check the performance and accessibility of the site and on all of its pages. This was done using the Lighthouse function with Dev Tools. 
+
+First, I checked the index.html page, which gave me a performance of 75%, accessibility of 92% and 100% for Best practices and SEO.
+
+![Lighthouse landing page](./README_images/lighthouse1.png)
+
+I then tried to convert some of the images from .jpg to .webp But this lowered my performance from 75% to 45%
+
+![Lowered Performance](./README_images/lighthouse_webp.png)
+
+As a reslut I changed the images back to .jpg but I did convert the background image to a .png file type and this really help with the performance. 
+
+![]
+
+
+
 ### Validation
 
-Once Testing was compelted I moved on to validating my
+Once Testing was completed I moved on to validating my
 
 
 
