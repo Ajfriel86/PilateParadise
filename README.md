@@ -123,11 +123,11 @@ The goal of delivering this site is to fulfill an end user's needs when searchin
 
 ### Implementation of Design
 
-The design for this site was inspired by my local [Pilates Studio](https://galwaypilates.com/) as well as some searching on color design. I used the [Abobe Color Wheel](https://color.adobe.com/create/color-wheel) and chose a base color to work off then went with monochromatic coloring.
+- The design for this site was inspired by my local [Pilates Studio](https://galwaypilates.com/) as well as some searching on color design. I used the [Abobe Color Wheel](https://color.adobe.com/create/color-wheel) and chose a base color to work off then went with monochromatic coloring.
     
 ![color swatch](./Readmeimages/colour_swatch.png)
 
-I started with having the cards on every page with the background color set to black but, after some consideration and using the color swatch, I decided to make some changes. The changes made, I believe, add to the look and feel of the site. The images below are of the older version of the site:
+- I started with having the cards on every page with the background color set to black but, after some consideration and using the color swatch, I decided to make some changes. The changes made, I believe, add to the look and feel of the site. The images below are of the older version of the site:
 
 #### Landing page:
 ![Index Old](./Readmeimages/landing_page.png)
@@ -167,27 +167,27 @@ I started with having the cards on every page with the background color set to b
 
 ### Bugs
 
-While testing the site there were some errors and issues. One of these issues was two of the flexboxes on the contact page overlapping when resizing the screen:
+- While testing the site there were some errors and issues. One of these issues was two of the flexboxes on the contact page overlapping when resizing the screen:
 
 ![flexbox overlap](./Readmeimages/flexbox_overlap.png)
 
-This took some time to debug but after comparing the different containers from other pages I realized I had position: absolute set to the iframe of the google maps. After removing this and setting some media queries, the issue was resolved. 
+- This took some time to debug but after comparing the different containers from other pages I realized I had position: absolute set to the iframe of the google maps. After removing this and setting some media queries, the issue was resolved. 
 
-Another issue was with the layout of the teachers.html page. As for the cards on this page, I wanted them to be in columns and not rows. As the other pages were in rows, there were some conflicting issues. So this was debugged using Chromes Devc Tools. After setting the background color of the image and text sections to different colors, it made it easier to visualize and debug. 
+- Another issue was with the layout of the teachers.html page. As for the cards on this page, I wanted them to be in columns and not rows. As the other pages were in rows, there were some conflicting issues. So this was debugged using Chromes Devc Tools. After setting the background color of the image and text sections to different colors, it made it easier to visualize and debug. 
 
 ![teachers debugging](./Readmeimages/teacher_debug.png)
 
-Once I was able to visualize the issue and then work within Chrome's Dev Tools, it made it easy to rework the cards so they are viewed horizontally.
+- Once I was able to visualize the issue and then work within Chrome's Dev Tools, it made it easy to rework the cards so they are viewed horizontally.
 
 ![Horizontal View](./Readmeimages/teacher_horizontal.png)
 
-After initial testing, I then used Chrome's Dev Tools to check the performance and accessibility of the site and on all of its pages. This was done using the Lighthouse function with Dev Tools. 
+- After initial testing, I then used Chrome's Dev Tools to check the performance and accessibility of the site and on all of its pages. This was done using the Lighthouse function with Dev Tools. 
 
-When testing the site out on various screen sizes I noticed the footer was having some issues:
+- When testing the site out on various screen sizes I noticed the footer was having some issues:
 
 ![Footer Issue](./Readmeimages/footer.png)
 
-This was resolved by adding some media queries to reduce the font size:
+- This was resolved by adding some media queries to reduce the font size:
 
 ![Footer Fixed](./Readmeimages/footer_fixed.png)
 
@@ -197,11 +197,11 @@ My first Lighthouse report gave me a performance of 75%, accessibility of 92% an
 
 ![Lighthouse landing page](./Readmeimages/lighthouse_preformance1.png)
 
-I then tried to convert some of the images from jpg to 'webp' But this lowered my performance from 75% to 45%. The reason for this could be that I used an online converter, rather than using 'cwebp' command-line tool or the Imagemin WebP plugin.
+- I then tried to convert some of the images from jpg to 'webp' But this lowered my performance from 75% to 45%. The reason for this could be that I used an online converter, rather than using 'cwebp' command-line tool or the Imagemin WebP plugin.
 
 ![Lowered Performance](./Readmeimages/lighthouse_webp.png)
 
-As a result, I changed the images back to .jpg but I did convert the background image to a .png file type and this helped with the performance. 
+- As a result, I changed the images back to .jpg but I did convert the background image to a .png file type and this helped with the performance. 
 
 ![Higher Performance](./Readmeimages/lighthouse_preformance2.png)
 
@@ -209,36 +209,42 @@ As a result, I changed the images back to .jpg but I did convert the background 
 
 ### HTML Validation
 
-Once Testing was completed I moved on to validating my site using the [W3C Validator](https://validator.w3.org/). My first validation gave me the following warning:
+Once Testing was completed I moved on to validating my site using the [W3C Validator](https://validator.w3.org/). 
+
+- My first validation gave me the following warning:
 
 ![Index.html Warning](./Readmeimages/w3_index.png)
 
-As it is best practice to give section tags headings I removed this warning by wrapping my sections in an outer div. 
+- As it is best practice to give section tags headings I removed this warning by wrapping my sections in an outer div. 
 
 ![Index.html Warning](./Readmeimages/w3_index2.png)
 
-The classes page also had the same warning that was removed in the same way:
+- The classes page also had the same warning that was removed in the same way:
 
 ![Classes.html Warning](./Readmeimages/w3_classes.png)
 ![Classes.html Warning](./Readmeimages/w3_classes2.png)
 
-The teacher's page also had the same warning that was removed in the same way:
+- The teacher's page also had the same warning that was removed in the same way:
 
 ![Classes.html Warning](./Readmeimages/w3_teachers.png)
 ![Classes.html Warning](./Readmeimages/w3_teachers2.png)
 
-The contact page had some errors:
+- The contact page had some errors:
 
 ![Contact Page Errors](./Readmeimages/w3_contact.png)
 
-These were corrected. The error for the stray select tag was happening as I had my text area inside my select tags. Once this was removed and placed outside the select tag, the error was resolved.
+- These were corrected. The error for the stray select tag was happening as I had my text area inside my select tags. Once this was removed and placed outside the select tag, the error was resolved.
 
 ![Contact Page Errors](./Readmeimages/w3_contact2.png)
 
 
-After validating my HTML I then went on to validate my CSS. There was one error found:
+- After validating my HTML I then went on to validate my CSS. There was one error found. This was resolved by replacing the HEX value with an rbga value:
 
-![]()
+![CSS Validation](./Readmeimages/w3_css.png)
+
+- Also, as I was using variables in my CSS, I had the following warnings:
+
+![CSS Warnings](./Readmeimages/css_warning.png)
 ---
 
 ## Deployment
