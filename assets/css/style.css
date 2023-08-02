@@ -4,6 +4,7 @@
 /* Create varible for a background colour & box-shadow */
 :root {
     --background: rgba(80, 160, 96, 0.9);
+    --backgroud2: rgba(55, 110, 66, 0.95);
     --boxshadow: rgba(0, 0, 0, 1) 0px 22px 70px 4px;
 }
 
@@ -65,7 +66,7 @@ header {
 .nav-toggle-label {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     margin-left: 1em;
     height: 100%;
     display: flex;
@@ -104,7 +105,7 @@ header {
 /* stlyes the nav bar for both hamburger menu and regular nav bar, the transforms are for the hamburger menu */
 nav {
     position: absolute;
-    text-align: left;
+    text-align: right;
     top: 100%;
     left: 0;
     background: var(--background);
@@ -154,6 +155,7 @@ nav a:hover {
 }
 
 .heading {
+    border-radius: 15px;
     display: flex;
     background: rgba(0, 0, 0, 0.9);
     box-shadow: var(--boxshadow);
@@ -184,7 +186,9 @@ nav a:hover {
 
 /* Syle the cards within the container on index.html */
 .item {
-    background: rgba(0, 0, 0, 0.9);
+    background: var(--backgroud2);
+    border-radius: 15px;
+    border-style: solid;
     color: white;
     margin: 0.5em;
     max-width: 45rem;
@@ -219,6 +223,8 @@ img {
     width: 100%;
     display: block;
     object-fit: cover;
+    border-radius: 15px;
+    box-shadow: var(--boxshadow);
 }
 
 /* Style the text section within the cards on index.html */
@@ -237,14 +243,14 @@ img {
     color: white;
     text-decoration: none;
     cursor: pointer;
+
 }
 
 /* Style the anchor tags on hover over on index.html */
 .item a:hover {
-    color: white;
+    color: #000;
     padding-bottom: 0.1rem;
     border-bottom-style: solid;
-    border-bottom-width: 0.1rem;
     width: fit-content;
 }
 
@@ -271,7 +277,9 @@ img {
     min-width: 30rem;
     font-size: 2rem;
     flex: 1 1 30%;
-    background: rgba(0, 0, 0, 0.85);
+    background: var(--backgroud2);
+    border-radius: 15px;
+    border-style: solid;
     color: white;
     display: flex;
     flex-direction: column;
@@ -298,7 +306,9 @@ img {
 /* Style the cards on the teachers.html page */
 .teach-item {
     margin-top: 5em !important;
-    background: rgba(0, 0, 0, 0.85);
+    background: var(--backgroud2);
+    border-radius: 15px;
+    border-style: solid;
     width: 100rem;
     line-height: 2;
     display: flex;
@@ -331,7 +341,6 @@ img {
 /* Styles the items within the container on the contact.html page */
 .form-item {
     box-shadow: var(--boxshadow);
-    border-style: solid;
     position: relative;
 }
 
@@ -343,6 +352,8 @@ img {
 iframe {
     height: 100%;
     width: 100%;
+    border-radius: 15px;
+    border-style: solid;
 }
 
 /* Styles the form on the contact.html page */
@@ -350,9 +361,10 @@ form {
     display: grid;
     padding: 1em;
     background: #f9f9f9;
-    border: 1px solid #c1c1c1;
+    border: 1px solid #000000;
     max-width: 600px;
     padding: 1em;
+    border-radius: 15px;
 }
 
 /* stles the input sectiosn on the from on the contact.html page */
@@ -407,6 +419,7 @@ footer {
     background: #000;
     color: white;
     width: 100%;
+    padding-bottom: 1rem;
 }
 
 /* style the anchor tag within a list item on the footer of every page */
@@ -454,6 +467,11 @@ footer p {
         font-size: 1rem;
     }
 
+    .row-item {
+        width: 15rem;
+        margin: 1rem;
+    }
+
     .form-item {
         display: flex;
         align-items: center;
@@ -462,6 +480,13 @@ footer p {
         flex-direction: column;
         margin-top: 5rem;
     }
+
+    footer {
+        font-size: 15px;
+        line-height: 2;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 /* Media query for the teacher cards to view on mobile */
@@ -469,6 +494,21 @@ footer p {
 
     .heading {
         font-size: 1rem;
+    }
+
+    .row-item {
+        min-width: 15rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .row-item h3 {
+        font-size: 22px;
+    }
+
+    .row-item li {
+        font-size: 18px;
+        line-height: 3;
     }
 
     .teach-item {
@@ -484,6 +524,36 @@ footer p {
         margin-top: 10em;
     }
 
+    .logo {
+        font-size: 10px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding-left: 0.5rem;
+    }
+
+    footer li {
+        line-height: 3;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    .row-item h3 {
+        font-size: 18px;
+    }
+
+    .row-item li {
+        font-size: 12px;
+    }
+
+    footer {
+        font-size: 9px;
+        padding-left: 0.5rem;
+    }
+
 }
 
 /* Media query for responsive nav bar */
@@ -496,13 +566,7 @@ footer p {
     header {
         display: grid;
         grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
-    }
 
-    .logo {
-        font-weight: 50;
-        display: flex;
-        align-items: flex-end;
-        justify-content: flex-end;
     }
 
     nav {
