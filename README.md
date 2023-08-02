@@ -4,7 +4,7 @@
 
 ## About
 
-The goal of delivering this site is to fulfill an end user's needs when searching for a Pilates studio in their area. The site comprises of information regarding various classes and when they are on, as well as teacher information who guides the classes.
+The goal of delivering this site is to fulfill an end user's needs when searching for a Pilates studio in their area. The site contains information regarding various classes and when they are on, as well as teacher information who guides the classes.
 
 ---
 
@@ -50,31 +50,31 @@ The goal of delivering this site is to fulfill an end user's needs when searchin
 
    - Upon visiting the site the initial page will display 3 cards with various options of different classes that are available
 
-    ![landing page](./Readmeimages/landing_page.png)
+    ![landing page](./Readmeimages/index_new.png)
 
 1. Classes Page
 
     - The following page has a timetable laid out for the various classes and when they are on
 
-    ![classes page](./Readmeimages/classes_page.png)
+    ![classes page](./Readmeimages/classes_new.png)
 
 1. Teachers Page
 
     - This page will display information regarding the teachers who guide the classes at the studio
 
-    	![teachers page](./Readmeimages/teachers_page.png)
+    	![teachers page](./Readmeimages/teacher_new.png)
 
 1. Contact Page
 
     - This page will display a map with the location of the studio as well as a contact form so end users can reach out to the studio about any queries or if they wish to book a class
 
-    ![contact page](./Readmeimages/contact_page.png)
+    ![contact page](./Readmeimages/contact_new.png)
 
 1. Thank You Page
 
     - This page is displayed after the form has been filled in, validated, and submitted
 
-    ![thankyou page](./Readmeimages/thankyou_page.png)
+    ![thankyou page](./Readmeimages/ty_new.png)
 ---
 
 ## Technologies used
@@ -100,13 +100,9 @@ The goal of delivering this site is to fulfill an end user's needs when searchin
 ---
 ## Design
 
-The design for this site was inspired by my local [Pilates Studio](https://galwaypilates.com/) as well as some searching on color design. I used the [Abobe Color Wheel](https://color.adobe.com/create/color-wheel) and chose a base color to work off then went with monochromatic coloring.
-    
-![color swatch](./Readmeimages/colour_swatch.png)
-
 ### Wireframes
 
-#### Home page:
+#### Landing page:
 
 ![wireframe landing page](./Readmeimages/wire_frame_landing_page.png)
 
@@ -116,11 +112,28 @@ The design for this site was inspired by my local [Pilates Studio](https://galwa
 
 #### Teachers page:
 
-![wireframe teachers page](./README_images/wireframe_teachers_page.png)
+![wireframe teachers page](./Readmeimages/wireframe_teachers_page.png)
 
 #### Contact page:
 
 ![wireframe contact page](./Readmeimages/wireframe_contact_page.png)
+
+### Implementation of Design
+
+The design for this site was inspired by my local [Pilates Studio](https://galwaypilates.com/) as well as some searching on color design. I used the [Abobe Color Wheel](https://color.adobe.com/create/color-wheel) and chose a base color to work off then went with monochromatic coloring.
+    
+![color swatch](./Readmeimages/colour_swatch.png)
+
+I started with having the cards on every page with the background color set to black but, after some consideration and using the color swatch, I decided to make some changes. The changes made, I believe, add to the look and feel of the site. These images below are of the older version of the site:
+
+#### Landing page:
+![Index Old](./Readmeimages/landing_page.png)
+#### Classes page:
+![Classes Old](./Readmeimages/classes_page.png)
+#### Teachers page:
+![Teachers Old](./Readmeimages/teachers_page.png)
+#### Thank You page:
+![Thank You Old](./Readmeimages/thankyou_page.png)
 
 
 ### Responsive Design
@@ -163,11 +176,21 @@ Once I was able to visualize the issue and then work within Chrome's Dev Tools, 
 
 After initial testing, I then used Chrome's Dev Tools to check the performance and accessibility of the site and on all of its pages. This was done using the Lighthouse function with Dev Tools. 
 
+When testing the site out on various screen sizes I noticed the footer was having some issues:
+
+![Footer Issue](./Readmeimages/footer.png)
+
+This was resolved by adding some media queries to reduce the font-size:
+
+![Footer Fixed](./Readmeimages/footer_fixed.png)
+
+### Performance
+
 My first Lighthouse report gave me a performance of 75%, accessibility of 92% and 100% for Best practices and SEO.
 
 ![Lighthouse landing page](./Readmeimages/lighthouse_preformance1.png)
 
-I then tried to convert some of the images from jpg to webp But this lowered my performance from 75% to 45%. The reason for this could be that I used an online converter, rather than using cwebp command-line tool or the Imagemin WebP plugin.
+I then tried to convert some of the images from jpg to 'webp' But this lowered my performance from 75% to 45%. The reason for this could be that I used an online converter, rather than using 'cwebp' command-line tool or the Imagemin WebP plugin.
 
 ![Lowered Performance](./Readmeimages/lighthouse_webp.png)
 
