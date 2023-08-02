@@ -139,30 +139,6 @@ The goal of delivering this site is to fulfill an end user's needs when searchin
 ![Thank You Old](./Readmeimages/thankyou_page.png)
 
 
-### Responsive Design
-
-- The index.html, the Landing page, as it is viewed from a mobile device: 
-
-![Landing Page on Mobile](./Readmeimages/index_mobile.png)
-
-- The teachers.html page as viewed from a mobile device:
-
-![Teachers Page on Mobile](./Readmeimages/teachers_mobile.png)
-
-- The contact.html page as viewed on a tablet: 
-
-![Contact Page on Tablet](./Readmeimages/contact_tablet.png)
-
-- This was also tested on Microsoft's Edge Browser to ensure all elements carried over to other browsers and that it was responsive on this as well:
-
-![Index on Edge Browser](./Readmeimages/index_edge.png)
-
-- The Chrome extension [Responsive Viewer](https://chrome.google.com/webstore/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb) was also used to check various devices and how the site responds to these dimensions:
-
-![Responsive Viewer](./Readmeimages/responsive_viewer.jpg.png)
-
-
-
 ## Testing
 
 ### Bugs
@@ -205,6 +181,27 @@ My first Lighthouse report gave me a performance of 75%, accessibility of 92% an
 
 ![Higher Performance](./Readmeimages/lighthouse_preformance2.png)
 
+### Responsive Design
+
+- The index.html, the Landing page, as it is viewed from a mobile device: 
+
+![Landing Page on Mobile](./Readmeimages/index_mobile.png)
+
+- The teachers.html page as viewed from a mobile device:
+
+![Teachers Page on Mobile](./Readmeimages/teachers_mobile.png)
+
+- The contact.html page as viewed on a tablet: 
+
+![Contact Page on Tablet](./Readmeimages/contact_tablet.png)
+
+- This was also tested on Microsoft's Edge Browser to ensure all elements carried over to other browsers and that it was responsive on this as well:
+
+![Index on Edge Browser](./Readmeimages/index_edge.png)
+
+- The Chrome extension [Responsive Viewer](https://chrome.google.com/webstore/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb) was also used to check various devices and how the site responds to these dimensions:
+
+![Responsive Viewer](./Readmeimages/responsive_viewer.jpg.png)
 
 
 ### HTML Validation
