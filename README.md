@@ -33,7 +33,7 @@ The goal of delivering this site is to fulfill an end user's needs when searchin
 
 1. As a site user, I would like to know what services are available, so I know what is on offer
 
-### Site-OWner:
+### Site-Owner:
 
 1. As a site owner, I would like the site to display all the necessary information for site users to understand what service we deliver 
 
@@ -77,6 +77,25 @@ The goal of delivering this site is to fulfill an end user's needs when searchin
     - This page is displayed after the form has been filled in, validated, and submitted
 
     ![thankyou page](./Readmeimages/ty_new.png)
+
+1. Navigation Bar
+
+ This was constructed in such a way that when the screen is resized that the nav bar 'crumples' into a hamburger menu:
+
+ - Before
+
+ ![Nav Before](./Readmeimages/nav1.png)
+
+ - After 
+
+ ![Nav After](./Readmeimages/nav2.png)
+
+ 1. Footer
+
+ The footer displays the contact and social media information. With icons sourced from [Font Awesome](https://fontawesome.com/). All links are also working, but only bring the user to the login page for the social media links
+
+ ![Footer](./Readmeimages/foorter.png)
+ 
 ---
 
 ## Technologies used
