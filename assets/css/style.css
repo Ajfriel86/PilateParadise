@@ -58,7 +58,7 @@ header {
 
 /*  */
 .nav-toggle:focus~.nav-toggle-label {
-    outline: 3px solid rgba(#fff, .75);
+    outline: 3px solid rgba(255, 255, 255, .75);
 }
 
 /* Styling/positioning the label used for the hamburger menu */
