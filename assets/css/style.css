@@ -154,6 +154,7 @@ nav a:hover {
     transition: opacity 250ms ease-in-out 250ms;
 }
 
+/* Style the text heading on every page */
 .heading {
     border-radius: 15px;
     display: flex;
@@ -169,6 +170,7 @@ nav a:hover {
 
 }
 
+/* This is used to tell the W3 CSS validator that there is no heading, as I was getting a warning for my sections not having a heading  */
 .none {
     display: none;
 }
@@ -346,6 +348,7 @@ img {
     border: 3px solid #000000;
 }
 
+/* This is used to tell the W3 CSS validator that there is no heading, as I was getting a warning for my sections not having a heading  */
 .form-item .from-map {
     display: none;
 }
@@ -453,11 +456,13 @@ li {
     padding-right: 2rem;
 }
 
+/* Style the unordered list in the footer */
 footer ul {
     padding: 0;
     margin: 0;
 }
 
+/* style the paragraphs in the footer */
 footer p {
     padding: 2em 0 !important;
 }
@@ -491,7 +496,7 @@ footer p {
     }
 }
 
-/* Media query for the teacher cards to view on mobile */
+/* Media query to view on mobile */
 @media only screen and (max-width: 800px) {
 
     .heading {
@@ -527,7 +532,7 @@ footer p {
     }
 
     .logo {
-        font-size: 10px;
+        font-size: 15px;
     }
 
     footer {
@@ -543,6 +548,10 @@ footer p {
 
 /* media query for small phones, such as the galaxy fold */
 @media only screen and (max-width: 500px) {
+
+    .logo {
+        font-size: 10px;
+    }
 
     .row-item h3 {
         font-size: 18px;
