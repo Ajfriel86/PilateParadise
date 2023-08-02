@@ -235,11 +235,11 @@ Once Testing was completed I moved on to validating my site using the [W3C Valid
 ![Contact Page Errors](./Readmeimages/w3_contact2.png)
 
 
-- After validating my HTML I then went on to validate my CSS. There was one error found. This was resolved by replacing the HEX value with an rbga value:
+- After validating my HTML I then went on to validate my CSS. There was one error found. This was resolved by replacing the HEX value with a rbga value:
 
 ![CSS Validation](./Readmeimages/w3_css.png)
 
-- Also, as I was using variables in my CSS, I had the following warnings:
+- Also, as I was using modern CSS variables in my CSS, I had the following warnings as the W£ Validator was not able to check these. The site has been checked comprehensibly with no issues related to these warnings:
 
 ![CSS Warnings](./Readmeimages/css_warning.png)
 ---
