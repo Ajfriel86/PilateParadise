@@ -251,25 +251,26 @@ Once Testing was completed I moved on to validating my site using the [W3C Valid
 This website was constructed in VS Code and deployed on GitHub. The steps taken to deploy this website from its [GitHub Repository](https://github.com/Ajfriel86/PilatesParadise) are as follows:
 
 - Log into GitHub
-- Go to the list of repositories on the left-hand side of the screen.
+- Go to the list of repositories on the left-hand side of the screen
 - Click on the repository - [PillatesParadise](https://ajfriel86.github.io/pilatesparadise)
-- Choose the settings tab from the menu items across the top of the page; it is the ninth choice and last option on the menu items.
-- Once the settings page has loaded scroll down to Pages.
-- In the source section, choose the master branch.
-- On selecting this the page is automatically refreshed and the website is deployed.
-- A link to the website is then displayed, this is the deployed website address.
+- Choose the settings tab from the menu items across the top of the page; it is the 9th tab on the menu items list.
+- Under 'Code and automation,' the last choice on the list is 'Pages'
+- In the 'Source' section, choose 'Deploy from a branch'
+- In the 'Branch' section, choose the branch you wish to deploy
+- Select, or click, the 'Save' button
+- A link to the deployed website is then displayed at the top of the page
 
 ### How To Clone a GitHub Repository
 
-- On GitHub.com, navigate to the main page of the repository.
-- Above the list of files, click <>  Code.
-- Copy the URL for the repository.
-- Open Git Bash.
-- Change the current working directory to the location where you want the cloned directory.
-- Type git clone, and then paste the URL you copied earlier.
-- Press Enter to create your local clone.
+- On GitHub.com, navigate to the main page of the repository
+- Above the list of files, click <>  Code
+- Copy the URL for the repository
+- Open Git Bash
+- Change the current working directory to the location where you want the cloned directory
+- Type git clone, and then paste the URL you copied earlier
+- Press Enter to create your local clone
 
-These steps can be found in the help documentation for GitHub here:
+These steps can where found in the help documentation for GitHub here:
 - [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
 
 ---
@@ -292,6 +293,7 @@ For a deeper understanding of hamburger menus with no JavaScript, meta tags, inf
    - [Mozilla - Nav tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav): This was used to understand nav tags in more detail
    - [Mozzila - HTML Markup](https://www.w3.org/TR/2012/WD-html-markup-20120329/ul.html): This was used to understand HTML markup in more detail
    - [W3 Schools - Anchor Tags](https://www.w3schools.com/tags/tag_a.asp): THis was used to understand anchor tags in more detail
+   - - [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository): This was used to understand how to clone a repository
 
 
 ---
