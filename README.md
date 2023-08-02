@@ -1,5 +1,7 @@
 # Pilates Paradise
 
+![Responsive Image](./Readmeimages/responsive.jpg)
+
 [View Deployed Site Here](https://ajfriel86.github.io/PilatesParadise/)
 
 ## About
@@ -95,6 +97,7 @@ The goal of delivering this site is to fulfill an end user's needs when searchin
     + [Abobe Color-Wheel](https://color.adobe.com/create/color-wheel): This was used to create color swatches
     + [W3C Validator](https://validator.w3.org/): This was used to validate HTML5 code for the website
     + [W3C CSS validator](https://jigsaw.w3.org/css-validator/): This is used to validate CSS code for the website
+    + [Responsive Viewer](https://chrome.google.com/webstore/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb): This was used to check the responsive design of the site on various devices
   
 
 ---
@@ -124,7 +127,7 @@ The design for this site was inspired by my local [Pilates Studio](https://galwa
     
 ![color swatch](./Readmeimages/colour_swatch.png)
 
-I started with having the cards on every page with the background color set to black but, after some consideration and using the color swatch, I decided to make some changes. The changes made, I believe, add to the look and feel of the site. These images below are of the older version of the site:
+I started with having the cards on every page with the background color set to black but, after some consideration and using the color swatch, I decided to make some changes. The changes made, I believe, add to the look and feel of the site. The images below are of the older version of the site:
 
 #### Landing page:
 ![Index Old](./Readmeimages/landing_page.png)
@@ -154,6 +157,10 @@ I started with having the cards on every page with the background color set to b
 
 ![Index on Edge Browser](./Readmeimages/index_edge.png)
 
+- The Chrome extension [Responsive Viewer](https://chrome.google.com/webstore/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb) was also used to check various devices and how the site responds to these dimensions:
+
+![Responsive Viewer](./Readmeimages/responsive_viewer.jpg.png)
+
 
 
 ## Testing
@@ -180,7 +187,7 @@ When testing the site out on various screen sizes I noticed the footer was havin
 
 ![Footer Issue](./Readmeimages/footer.png)
 
-This was resolved by adding some media queries to reduce the font-size:
+This was resolved by adding some media queries to reduce the font size:
 
 ![Footer Fixed](./Readmeimages/footer_fixed.png)
 
